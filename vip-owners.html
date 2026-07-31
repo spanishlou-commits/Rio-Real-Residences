@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="List your property exclusively with Rio Real Residences and receive a full VIP digital marketing package — professional photography, a dedicated property page, AI visibility and multilingual marketing.">
+  <title>VIP Owner's Club — List Your Property | Rio Real Residences</title>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "VIP Owner's Club",
+    "provider": { "@type": "Organization", "name": "Rio Real Residences & Living", "url": "https://riorealresidences.com" },
+    "description": "An exclusive listing partnership for property owners in Rio Real, Los Monteros, Lomas de Pozuelo and Bello Horizonte. Includes professional photography, a dedicated property page, AI platform visibility, multilingual marketing and monthly performance reports.",
+    "areaServed": { "@type": "Place", "name": "Marbella East", "addressCountry": "ES" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=3">
+
+  <style>
+    .vip-hero {
+      background: var(--dark);
+      padding: clamp(100px, 14vw, 160px) var(--gutter) clamp(72px, 10vw, 120px);
+      position: relative;
+      overflow: hidden;
+    }
+    .vip-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(42,181,198,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .vip-hero__inner { max-width: var(--max-w); margin-inline: auto; position: relative; }
+    .vip-hero .label { color: var(--teal); margin-bottom: 20px; }
+    .vip-hero h1 { color: var(--white); max-width: 14ch; margin-bottom: 28px; }
+    .vip-hero__lead { color: rgba(255,255,255,0.7); font-size: 1.1rem; line-height: 1.8; max-width: 620px; }
+
+    .vip-intro {
+      padding: clamp(64px, 9vw, 112px) var(--gutter);
+      background: var(--cream);
+    }
+    .vip-intro__inner { max-width: var(--max-w); margin-inline: auto; display: grid; grid-template-columns: 3fr 2fr; gap: clamp(48px, 7vw, 96px); align-items: start; }
+    .vip-intro__text h2 { margin-bottom: 28px; }
+    .vip-intro__text p { color: var(--mid); line-height: 1.85; margin-bottom: 18px; font-size: 1rem; }
+    .vip-intro__aside { background: var(--white); padding: 36px; border-top: 3px solid var(--teal); }
+    .vip-intro__aside p { font-family: var(--font-serif); font-size: 1.25rem; font-style: italic; color: var(--dark); line-height: 1.6; margin: 0; }
+    .vip-intro__aside cite { display: block; margin-top: 20px; font-family: var(--font-sans); font-style: normal; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal); }
+    @media (max-width: 768px) { .vip-intro__inner { grid-template-columns: 1fr; } }
+
+    /* Benefits */
+    .vip-benefits {
+      padding: clamp(64px, 9vw, 112px) var(--gutter);
+    }
+    .vip-benefits__inner { max-width: var(--max-w); margin-inline: auto; }
+    .vip-benefits__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 2px;
+      background: var(--border);
+      margin-top: 56px;
+    }
+    .benefit-card {
+      background: var(--white);
+      padding: 36px;
+      transition: background 0.2s;
+    }
+    .benefit-card:hover { background: var(--off-white); }
+    .benefit-card__number {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      color: var(--teal);
+      opacity: 0.3;
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    .benefit-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      color: var(--dark);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+    .benefit-card p {
+      font-size: 0.88rem;
+      color: var(--mid);
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    /* The Alternative */
+    .vip-alternative {
+      background: var(--dark);
+      padding: clamp(64px, 9vw, 112px) var(--gutter);
+    }
+    .vip-alternative__inner { max-width: var(--max-w); margin-inline: auto; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(48px, 7vw, 96px); align-items: start; }
+    .vip-alternative .label { color: var(--teal); margin-bottom: 20px; }
+    .vip-alternative h2 { color: var(--white); margin-bottom: 28px; }
+    .vip-alternative p { color: rgba(255,255,255,0.65); line-height: 1.85; margin-bottom: 18px; font-size: 0.95rem; }
+    .vip-alternative__highlight {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 36px;
+    }
+    .vip-alternative__highlight p { color: rgba(255,255,255,0.8); font-size: 1rem; margin-bottom: 20px; }
+    .vip-alternative__highlight strong { color: var(--white); }
+    @media (max-width: 768px) { .vip-alternative__inner { grid-template-columns: 1fr; } }
+
+    /* CTA */
+    .vip-cta {
+      padding: clamp(72px, 10vw, 120px) var(--gutter);
+      background: var(--cream);
+      text-align: center;
+    }
+    .vip-cta__inner { max-width: 640px; margin-inline: auto; }
+    .vip-cta .label { margin-bottom: 20px; }
+    .vip-cta h2 { margin-bottom: 24px; }
+    .vip-cta p { color: var(--mid); line-height: 1.8; margin-bottom: 40px; }
+    .vip-cta__buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .vip-cta__note { margin-top: 32px; font-size: 0.82rem; color: var(--mid); font-style: italic; }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav" id="main-nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <span class="nav__logo-main">Rio Real Residences</span>
+    </a>
+    <div class="nav__links">
+      <a href="properties.html" class="nav__link">Properties</a>
+      <div class="nav__dropdown">
+        <a href="areas.html" class="nav__link">Area Guides</a>
+        <div class="nav__dropdown-menu">
+          <a href="rio-real.html" class="nav__dropdown-item">Río Real</a>
+          <a href="los-monteros.html" class="nav__dropdown-item">Los Monteros</a>
+          <a href="lomas-de-pozuelo.html" class="nav__dropdown-item">Lomas de Pozuelo</a>
+          <a href="bello-horizonte.html" class="nav__dropdown-item">Bello Horizonte</a>
+        </div>
+      </div>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+      <a href="vip-owners.html" class="nav__link active">List With Us</a>
+    </div>
+    <a href="contact.html" class="nav__cta">Enquire Now</a>
+    <button class="nav__hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="nav__mobile">
+  <button class="nav__mobile-close" aria-label="Close menu">✕</button>
+  <a href="properties.html" class="nav__link">Properties</a>
+  <a href="areas.html" class="nav__link">Area Guides</a>
+  <div class="nav__mobile-sub">
+    <a href="rio-real.html" class="nav__mobile-sub-link">→ Río Real</a>
+    <a href="los-monteros.html" class="nav__mobile-sub-link">→ Los Monteros</a>
+    <a href="lomas-de-pozuelo.html" class="nav__mobile-sub-link">→ Lomas de Pozuelo</a>
+    <a href="bello-horizonte.html" class="nav__mobile-sub-link">→ Bello Horizonte</a>
+  </div>
+  <a href="about.html" class="nav__link">About</a>
+  <a href="contact.html" class="nav__link">Contact</a>
+  <a href="vip-owners.html" class="nav__link">List With Us</a>
+  <div class="contact-links">
+    <a href="#" data-wa="">WhatsApp us</a>
+    <a href="#" data-email="">info@riorealresidences.com</a>
+  </div>
+</div>
+
+<!-- Hero -->
+<section class="vip-hero">
+  <div class="vip-hero__inner">
+    <p class="label">VIP Owner's Club</p>
+    <h1>Why list with Rio Real Residences?</h1>
+    <p class="vip-hero__lead">When you list your property with us, you are not signing an agency contract. You are joining an exclusive partnership with two specialists who live in this area, know every buyer profile, and will treat your home with the same care and attention we would give our own.</p>
+  </div>
+</section>
+
+<!-- Intro -->
+<section class="vip-intro">
+  <div class="vip-intro__inner">
+    <div class="vip-intro__text">
+      <p class="label">The Partnership</p>
+      <h2>Six months exclusivity.<br>A package that goes far beyond a portal listing.</h2>
+      <p>We ask for a minimum of six months exclusivity. In return, you receive a digital marketing package that most agencies in Marbella simply cannot offer — because most agencies are not built around marketing.</p>
+      <p>We are. Every exclusive listing is treated as its own campaign. Your property gets a dedicated page, professional content, weekly social media coverage, multilingual outreach and direct access to our qualified buyer network — from day one.</p>
+      <p>Below is exactly what you receive.</p>
+    </div>
+    <div class="vip-intro__aside">
+      <p>"We only take on a small number of exclusive listings at any one time. That is the point."</p>
+      <cite>Louise Brace &amp; Charlotte Lindberg</cite>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits -->
+<section class="vip-benefits">
+  <div class="vip-benefits__inner">
+    <p class="label" style="margin-bottom:16px">What Your VIP Package Includes</p>
+    <h2 style="max-width:18ch">Ten things your property gets that others don't.</h2>
+
+    <div class="vip-benefits__grid">
+
+      <div class="benefit-card">
+        <div class="benefit-card__number">01</div>
+        <h3>Your Own Dedicated Property Landing Page</h3>
+        <p>We build your property its own page on riorealresidences.com, written by a professional copywriter and engineered to be found — by search engines and by AI platforms including ChatGPT, Perplexity and Google AI. As AI search becomes the way buyers discover property, visibility here is no longer optional. It is essential.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-card__number">02</div>
+        <h3>Professional Photography and Video</h3>
+        <p>Included in your contract. No extras, no surprises. Every exclusive listing receives professional photography and video production as standard, because how your property looks online determines who enquires and at what price.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-card__number">03</div>
+        <h3>A PDF Brochure Sent Directly to Our Clients</h3>
+        <p>Not a window card. A beautifully designed property brochure distributed directly to our qualified buyer contacts — a curated audience of serious buyers, investors and relocators.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-card__number">04</div>
+        <h3>Weekly Newsletter and Monthly Broadcast</h3>
+        <p>Your property is included in our weekly and monthly newsletters, reaching an engaged audience of prospective buyers across Europe and beyond. You are not a footnote in a portal. You are featured.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-card__number">05</div>
+        <h3>Direct WhatsApp Broadcast to Qualified Buyers</h3>
+        <p>We maintain a personal WhatsApp broadcast list of qualified buyer contacts. Your property goes directly to the people most likely to buy it.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-card__number">06</div>
+        <h3>Featured in Our Area Guide Pages</h3>
+        <p>Every exclusive listing is referenced within our area guide content, with a direct link to your property page. Buyers researching the area find your home organically, before they have even started their formal property search.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-card__number">07</div>
+        <h3>Weekly Social Media Coverage</h3>
+        <p>Your property is featured weekly across our social media profiles, with targeted paid promotion to defined buyer audiences by nationality, income and interest. We reach English, Spanish and Swedish speaking buyers across multiple platforms.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-card__number">08</div>
+        <h3>Multilingual Marketing</h3>
+        <p>We market your property in English, Spanish and Swedish, reaching the full breadth of international buyer audiences actively searching in this area.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-card__number">09</div>
+        <h3>AI Platform Visibility</h3>
+        <p>Louise is recognised as one of the Top 20 Vacation Rental Marketing experts globally, with a direct network audience of short-term rental investors and buyers. If your property has investment or holiday rental potential, it reaches exactly the people looking for it.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-card__number">10</div>
+        <h3>Monthly Performance Report</h3>
+        <p>Every month you receive a clear report covering traffic to your property page, enquiries generated and social media reach. You always know what is happening and what is working.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- The Alternative -->
+<section class="vip-alternative">
+  <div class="vip-alternative__inner">
+    <div>
+      <p class="label">The Alternative</p>
+      <h2>A non-exclusive contract with multiple agencies.</h2>
+      <p>Your property goes on Resales Online and Idealista. So does every other property those agencies handle. You become one listing among thousands, with no dedicated page, no professional content, no personal attention and no accountability.</p>
+      <p>We work with Resales Online too — which means all the agents on the coast are still working for you regardless. The difference is that with Rio Real Residences, you also get everything above.</p>
+      <p style="color:rgba(255,255,255,0.9); font-weight:600;">Same network reach. VIP treatment on top.</p>
+    </div>
+    <div class="vip-alternative__highlight">
+      <p>With a non-exclusive listing, you are one of thousands. With us, you are one of a few.</p>
+      <p>Every agency that lists on Resales Online is already working for you the moment you sign with us. We add ten layers of dedicated marketing on top of that — for a small number of properties, at any one time.</p>
+      <p><strong>That is the model. That is why it works.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="vip-cta">
+  <div class="vip-cta__inner">
+    <p class="label">Ready to Talk?</p>
+    <h2>Let's discuss your property.</h2>
+    <p>If you own a property in Río Real, Lomas de Pozuelo, Bello Horizonte or Los Monteros and you want it sold properly, we would love to have a conversation.</p>
+    <div class="vip-cta__buttons">
+      <a href="#" class="btn btn--whatsapp" data-wa="Hello, I'd like to discuss listing my property with Rio Real Residences.">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        WhatsApp Us
+      </a>
+      <a href="contact.html" class="btn btn--dark" data-email="I'd like to discuss listing my property with Rio Real Residences.">Email Us</a>
+    </div>
+    <p class="vip-cta__note">We only take on a small number of exclusive listings at any one time. That is the point.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="nav__logo" style="margin-bottom:16px">
+          <span class="nav__logo-main">Rio Real Residences</span>
+        </div>
+        <p>Specialist real estate covering Rio Real, Los Monteros and Marbella East.</p>
+        <div class="footer__contact-links">
+          <a href="#" class="footer__contact-link" data-wa="">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <a href="#" class="footer__contact-link" data-email="">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@riorealresidences.com
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h5>Properties</h5>
+        <ul class="footer__links">
+          <li><a href="properties.html" class="footer__link">For Sale</a></li>
+          <li><a href="properties.html" class="footer__link">Villas</a></li>
+          <li><a href="properties.html" class="footer__link">Apartments</a></li>
+          <li><a href="properties.html" class="footer__link">Penthouses</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Area Guides</h5>
+        <ul class="footer__links">
+          <li><a href="rio-real.html" class="footer__link">Río Real</a></li>
+          <li><a href="los-monteros.html" class="footer__link">Los Monteros</a></li>
+          <li><a href="lomas-de-pozuelo.html" class="footer__link">Lomas de Pozuelo</a></li>
+          <li><a href="bello-horizonte.html" class="footer__link">Bello Horizonte</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Agency</h5>
+        <ul class="footer__links">
+          <li><a href="about.html" class="footer__link">About Us</a></li>
+          <li><a href="vip-owners.html" class="footer__link">List With Us</a></li>
+          <li><a href="contact.html" class="footer__link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">© 2025 Rio Real Residences S.L. · All rights reserved.</span>
+      <nav class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Legal Notice</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js?v=2"></script>
+</body>
+</html>

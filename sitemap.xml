@@ -31,6 +31,12 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://www.riorealresidences.com/vip-owners</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Area Guides -->
   <url>
     <loc>https://www.riorealresidences.com/rio-real</loc>
