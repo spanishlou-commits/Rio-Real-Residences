@@ -176,7 +176,8 @@ p { font-size: 1rem; color: var(--mid); line-height: 1.75; }
 .nav__dropdown { position: relative; }
 .nav__dropdown-menu {
   position: absolute;
-  top: calc(100% + 16px);
+  top: 100%;
+  padding-top: 16px;
   left: 50%;
   transform: translateX(-50%);
   background: var(--white);
