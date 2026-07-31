@@ -24,22 +24,29 @@
 
   <style>
     .vip-hero {
-      background: var(--dark);
-      padding: clamp(100px, 14vw, 160px) var(--gutter) clamp(72px, 10vw, 120px);
       position: relative;
       overflow: hidden;
+      min-height: 580px;
+      display: flex;
+      align-items: flex-end;
+      padding: clamp(100px, 14vw, 160px) var(--gutter) clamp(72px, 10vw, 120px);
     }
-    .vip-hero::before {
-      content: '';
+    .vip-hero__bg {
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse at 70% 50%, rgba(42,181,198,0.08) 0%, transparent 60%);
-      pointer-events: none;
+      background-image: url('images/area/altos-los-monteros-views.jpg');
+      background-size: cover;
+      background-position: center;
     }
-    .vip-hero__inner { max-width: var(--max-w); margin-inline: auto; position: relative; }
+    .vip-hero__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(10,10,10,0.72) 0%, rgba(10,10,10,0.3) 60%, transparent 100%);
+    }
+    .vip-hero__inner { max-width: var(--max-w); margin-inline: auto; position: relative; width: 100%; }
     .vip-hero .label { color: var(--teal); margin-bottom: 20px; }
     .vip-hero h1 { color: var(--white); max-width: 14ch; margin-bottom: 28px; }
-    .vip-hero__lead { color: rgba(255,255,255,0.7); font-size: 1.1rem; line-height: 1.8; max-width: 620px; }
+    .vip-hero__lead { color: rgba(255,255,255,0.82); font-size: 1.1rem; line-height: 1.8; max-width: 620px; }
 
     .vip-intro {
       padding: clamp(64px, 9vw, 112px) var(--gutter);
@@ -95,20 +102,21 @@
 
     /* The Alternative */
     .vip-alternative {
-      background: var(--dark);
+      background: var(--off-white);
       padding: clamp(64px, 9vw, 112px) var(--gutter);
     }
     .vip-alternative__inner { max-width: var(--max-w); margin-inline: auto; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(48px, 7vw, 96px); align-items: start; }
     .vip-alternative .label { color: var(--teal); margin-bottom: 20px; }
-    .vip-alternative h2 { color: var(--white); margin-bottom: 28px; }
-    .vip-alternative p { color: rgba(255,255,255,0.65); line-height: 1.85; margin-bottom: 18px; font-size: 0.95rem; }
+    .vip-alternative h2 { color: var(--dark); margin-bottom: 28px; }
+    .vip-alternative p { color: var(--mid); line-height: 1.85; margin-bottom: 18px; font-size: 0.95rem; }
     .vip-alternative__highlight {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--teal);
       padding: 36px;
     }
-    .vip-alternative__highlight p { color: rgba(255,255,255,0.8); font-size: 1rem; margin-bottom: 20px; }
-    .vip-alternative__highlight strong { color: var(--white); }
+    .vip-alternative__highlight p { color: var(--mid); font-size: 1rem; margin-bottom: 20px; }
+    .vip-alternative__highlight strong { color: var(--dark); }
     @media (max-width: 768px) { .vip-alternative__inner { grid-template-columns: 1fr; } }
 
     /* CTA */
@@ -177,6 +185,8 @@
 
 <!-- Hero -->
 <section class="vip-hero">
+  <div class="vip-hero__bg"></div>
+  <div class="vip-hero__overlay"></div>
   <div class="vip-hero__inner">
     <p class="label">VIP Owner's Club</p>
     <h1>Why list with Rio Real Residences?</h1>
@@ -281,7 +291,7 @@
       <h2>A non-exclusive contract with multiple agencies.</h2>
       <p>Your property goes on Resales Online and Idealista. So does every other property those agencies handle. You become one listing among thousands, with no dedicated page, no professional content, no personal attention and no accountability.</p>
       <p>We work with Resales Online too — which means all the agents on the coast are still working for you regardless. The difference is that with Rio Real Residences, you also get everything above.</p>
-      <p style="color:rgba(255,255,255,0.9); font-weight:600;">Same network reach. VIP treatment on top.</p>
+      <p style="color:var(--dark); font-weight:600;">Same network reach. VIP treatment on top.</p>
     </div>
     <div class="vip-alternative__highlight">
       <p>With a non-exclusive listing, you are one of thousands. With us, you are one of a few.</p>
