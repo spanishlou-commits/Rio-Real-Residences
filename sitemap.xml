@@ -8,44 +8,50 @@
   </url>
 
   <url>
-    <loc>https://www.riorealresidences.com/properties.html</loc>
+    <loc>https://www.riorealresidences.com/properties</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.riorealresidences.com/about.html</loc>
+    <loc>https://www.riorealresidences.com/areas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.riorealresidences.com/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.riorealresidences.com/contact.html</loc>
+    <loc>https://www.riorealresidences.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Area Guides -->
   <url>
-    <loc>https://www.riorealresidences.com/rio-real.html</loc>
+    <loc>https://www.riorealresidences.com/rio-real</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.riorealresidences.com/los-monteros.html</loc>
+    <loc>https://www.riorealresidences.com/los-monteros</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.riorealresidences.com/lomas-de-pozuelo.html</loc>
+    <loc>https://www.riorealresidences.com/lomas-de-pozuelo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.riorealresidences.com/bello-horizonte.html</loc>
+    <loc>https://www.riorealresidences.com/bello-horizonte</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
