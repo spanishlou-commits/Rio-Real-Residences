@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="5-bedroom Andalusian villa for sale in Bello Horizonte, Marbella. 1,052 m² plot, 58 m² pool, sea and mountain views, mature tropical garden. Rio Real Residences exclusive.">
+  <title>Calle Almendro 144 - Exclusive Villa, Bello Horizonte | Rio Real Residences</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=3">
+  <style>
+
+    /* ── Exclusive badge ──────────────────────────────────────────────────── */
+    .exclusive-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--teal);
+      color: #fff;
+      font-family: var(--font-sans);
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+    .exclusive-badge svg { flex-shrink: 0; }
+
+    /* ── Property header ──────────────────────────────────────────────────── */
+    .prop-header {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      padding: 100px var(--gutter) 0;
+    }
+    .prop-header__meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 16px;
+    }
+    .prop-header__title { flex: 1 1 auto; }
+    .prop-header__title h1 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.1;
+    }
+    .prop-header__location {
+      font-size: 0.9rem;
+      color: var(--light-text);
+      margin-top: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .prop-header__price {
+      text-align: right;
+      flex-shrink: 0;
+    }
+    .prop-header__price-tag {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      color: var(--dark);
+      line-height: 1;
+    }
+    .prop-header__price-label {
+      font-size: 0.7rem;
+      color: var(--light-text);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    /* ── Quick specs strip ────────────────────────────────────────────────── */
+    .prop-specs {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      padding: 28px var(--gutter);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin-top: 28px;
+    }
+    .prop-spec {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      padding: 8px 24px;
+      border-right: 1px solid var(--border);
+      flex: 1 1 auto;
+    }
+    .prop-spec:last-child { border-right: none; }
+    .prop-spec__value {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: var(--dark);
+      line-height: 1;
+    }
+    .prop-spec__label {
+      font-size: 0.68rem;
+      color: var(--light-text);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      white-space: nowrap;
+    }
+    .prop-spec svg { color: var(--teal); }
+
+    /* ── Gallery ──────────────────────────────────────────────────────────── */
+    .prop-gallery {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      padding: 32px var(--gutter) 0;
+    }
+    .prop-gallery__grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 340px 220px;
+      gap: 6px;
+    }
+    .prop-gallery__main {
+      grid-row: 1 / 3;
+    }
+    .prop-gallery__main img,
+    .prop-gallery__thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .prop-gallery__main img:hover,
+    .prop-gallery__thumb img:hover { opacity: 0.92; }
+    .prop-gallery__thumb { position: relative; overflow: hidden; }
+    .prop-gallery__more {
+      position: absolute;
+      inset: 0;
+      background: rgba(14,14,14,0.52);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .prop-gallery__more:hover { background: rgba(14,14,14,0.4); }
+    .prop-gallery__more span:first-child {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+    }
+    .prop-gallery__more span:last-child {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+
+    /* ── Content layout ───────────────────────────────────────────────────── */
+    .prop-body {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      padding: 60px var(--gutter);
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 60px;
+      align-items: start;
+    }
+
+    /* ── Description sections ─────────────────────────────────────────────── */
+    .prop-sections { display: flex; flex-direction: column; gap: 48px; }
+    .prop-section__heading {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--dark);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .prop-section p {
+      margin-bottom: 16px;
+      line-height: 1.8;
+    }
+    .prop-section p:last-child { margin-bottom: 0; }
+
+    /* ── At a glance list ─────────────────────────────────────────────────── */
+    .at-a-glance {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 24px;
+    }
+    .at-a-glance__item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      color: var(--mid);
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .at-a-glance__item svg { color: var(--teal); flex-shrink: 0; }
+
+    /* ── Sidebar ──────────────────────────────────────────────────────────── */
+    .prop-sidebar { position: sticky; top: 96px; display: flex; flex-direction: column; gap: 24px; }
+
+    .sidebar-card {
+      background: var(--off-white);
+      border: 1px solid var(--border);
+      padding: 28px;
+    }
+    .sidebar-card h4 {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+    .sidebar-card p {
+      font-size: 0.88rem;
+      color: var(--mid);
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .sidebar-card .btn {
+      width: 100%;
+      text-align: center;
+      display: block;
+      padding: 14px 20px;
+      margin-bottom: 10px;
+    }
+    .sidebar-card .btn:last-child { margin-bottom: 0; }
+
+    .btn--primary {
+      background: var(--teal);
+      color: #fff;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border: 1px solid var(--teal);
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .btn--primary:hover { background: var(--teal-light); border-color: var(--teal-light); }
+
+    .btn--outline-dark {
+      background: transparent;
+      color: var(--dark);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border: 1px solid var(--dark);
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn--outline-dark:hover { background: var(--dark); color: #fff; }
+
+    /* ── Why we love this section ─────────────────────────────────────────── */
+    .love-section {
+      background: var(--cream);
+      padding: clamp(60px, 8vw, 100px) var(--gutter);
+    }
+    .love-section__inner {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .love-section__label { margin-bottom: 16px; }
+    .love-section__text h2 {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      margin-bottom: 28px;
+    }
+    .love-section__text p {
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+      line-height: 1.85;
+    }
+    .love-section__text p:last-child { margin-bottom: 0; }
+    .love-section__author {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+    }
+    .love-section__author img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .love-section__author-name {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: var(--dark);
+    }
+    .love-section__author-title {
+      font-size: 0.78rem;
+      color: var(--light-text);
+      letter-spacing: 0.06em;
+    }
+    .love-section__image {
+      border-radius: 0;
+      overflow: hidden;
+    }
+    .love-section__image img {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+    }
+
+    /* ── Brochure section ─────────────────────────────────────────────────── */
+    .brochure-section {
+      padding: clamp(60px, 8vw, 100px) var(--gutter);
+    }
+    .brochure-section__inner {
+      max-width: 680px;
+      margin-inline: auto;
+      text-align: center;
+    }
+    .brochure-section__inner .label { margin-bottom: 16px; display: block; }
+    .brochure-section__inner h2 { margin-bottom: 16px; }
+    .brochure-section__inner > p {
+      color: var(--mid);
+      margin-bottom: 36px;
+    }
+
+    .brochure-form {
+      background: var(--off-white);
+      border: 1px solid var(--border);
+      padding: 36px;
+      text-align: left;
+    }
+    .brochure-form__fields {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-group label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+    .form-group input {
+      padding: 13px 14px;
+      border: 1px solid var(--border);
+      background: var(--white);
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      color: var(--dark);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus { border-color: var(--teal); }
+
+    .form-optin {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      margin-bottom: 20px;
+      margin-top: 4px;
+    }
+    .form-optin input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      margin-top: 2px;
+      accent-color: var(--teal);
+      cursor: pointer;
+    }
+    .form-optin label {
+      font-size: 0.82rem;
+      color: var(--mid);
+      line-height: 1.5;
+      cursor: pointer;
+    }
+
+    .brochure-form__submit {
+      width: 100%;
+      padding: 16px;
+      background: var(--teal);
+      color: #fff;
+      border: none;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .brochure-form__submit:hover { background: var(--teal-light); }
+    .brochure-form__submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+    .brochure-success {
+      display: none;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .brochure-success__icon {
+      width: 56px;
+      height: 56px;
+      background: var(--teal);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      color: #fff;
+    }
+    .brochure-success h3 {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+    .brochure-success p {
+      color: var(--mid);
+      margin-bottom: 24px;
+    }
+    .brochure-download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--dark);
+      color: #fff;
+      padding: 14px 28px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: background 0.2s;
+    }
+    .brochure-download-btn:hover { background: var(--mid); }
+
+    /* ── Lightbox ─────────────────────────────────────────────────────────── */
+    .prop-lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      background: rgba(0,0,0,0.92);
+      align-items: center;
+      justify-content: center;
+    }
+    .prop-lightbox.open { display: flex; }
+    .prop-lightbox__img {
+      max-width: 90vw;
+      max-height: 85vh;
+      object-fit: contain;
+    }
+    .prop-lightbox__btn {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255,255,255,0.12);
+      border: none;
+      color: #fff;
+      font-size: 1.4rem;
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.2s;
+      border-radius: 2px;
+    }
+    .prop-lightbox__btn:hover { background: rgba(255,255,255,0.22); }
+    .prop-lightbox__prev { left: 16px; }
+    .prop-lightbox__next { right: 16px; }
+    .prop-lightbox__close {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      background: rgba(255,255,255,0.12);
+      border: none;
+      color: #fff;
+      font-size: 1.2rem;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: background 0.2s;
+    }
+    .prop-lightbox__close:hover { background: rgba(255,255,255,0.22); }
+    .prop-lightbox__counter {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255,255,255,0.6);
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+    }
+
+    /* ── Responsive ───────────────────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .prop-body { grid-template-columns: 1fr; }
+      .prop-sidebar { position: static; }
+      .love-section__inner { grid-template-columns: 1fr; }
+      .love-section__image { order: -1; }
+      .love-section__image img { aspect-ratio: 16/9; }
+    }
+    @media (max-width: 700px) {
+      .prop-gallery__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 280px 200px;
+      }
+      .prop-gallery__main { grid-row: auto; }
+      .prop-gallery__thumb:nth-child(3) { display: none; }
+      .prop-specs { gap: 12px; }
+      .prop-spec { padding: 8px 12px; border-right: none; border-bottom: 1px solid var(--border); flex: 1 1 40%; }
+      .at-a-glance { grid-template-columns: 1fr; }
+      .brochure-form__fields { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav" id="main-nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <span class="nav__logo-main">Rio Real Residences</span>
+    </a>
+    <div class="nav__links">
+      <a href="properties.html" class="nav__link active">Properties</a>
+      <div class="nav__dropdown">
+        <a href="areas.html" class="nav__link">Area Guides</a>
+        <div class="nav__dropdown-menu">
+          <a href="rio-real.html" class="nav__dropdown-item">Río Real</a>
+          <a href="los-monteros.html" class="nav__dropdown-item">Los Monteros</a>
+          <a href="lomas-de-pozuelo.html" class="nav__dropdown-item">Lomas de Pozuelo</a>
+          <a href="bello-horizonte.html" class="nav__dropdown-item">Bello Horizonte</a>
+        </div>
+      </div>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+      <a href="vip-owners" class="nav__link">VIP Owner's Club</a>
+    </div>
+    <a href="contact.html" class="nav__cta">Enquire Now</a>
+    <button class="nav__hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="nav__mobile">
+  <button class="nav__mobile-close" aria-label="Close menu">✕</button>
+  <a href="properties.html" class="nav__link">Properties</a>
+  <a href="areas.html" class="nav__link">Area Guides</a>
+  <div class="nav__mobile-sub">
+    <a href="rio-real.html" class="nav__mobile-sub-link">→ Río Real</a>
+    <a href="los-monteros.html" class="nav__mobile-sub-link">→ Los Monteros</a>
+    <a href="lomas-de-pozuelo.html" class="nav__mobile-sub-link">→ Lomas de Pozuelo</a>
+    <a href="bello-horizonte.html" class="nav__mobile-sub-link">→ Bello Horizonte</a>
+  </div>
+  <a href="about.html" class="nav__link">About</a>
+  <a href="contact.html" class="nav__link">Contact</a>
+  <a href="vip-owners" class="nav__link">VIP Owner's Club</a>
+  <div class="contact-links">
+    <a href="#" data-wa="">WhatsApp us</a>
+    <a href="#" data-email="">info@riorealresidences.com</a>
+  </div>
+</div>
+
+<!-- Breadcrumb -->
+<div class="prop-header" style="padding-bottom: 0;">
+  <nav style="font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--light-text); display:flex; gap:8px; align-items:center;">
+    <a href="index.html" style="color:var(--light-text); transition:color 0.2s" onmouseover="this.style.color='var(--dark)'" onmouseout="this.style.color='var(--light-text)'">Home</a>
+    <span>·</span>
+    <a href="properties.html" style="color:var(--light-text); transition:color 0.2s" onmouseover="this.style.color='var(--dark)'" onmouseout="this.style.color='var(--light-text)'">Properties</a>
+    <span>·</span>
+    <span style="color:var(--dark)">Calle Almendro 144</span>
+  </nav>
+</div>
+
+<!-- Property Header -->
+<div class="prop-header">
+  <div class="exclusive-badge">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    Exclusive Listing
+  </div>
+  <div class="prop-header__meta">
+    <div class="prop-header__title">
+      <h1>Calle Almendro 144</h1>
+      <div class="prop-header__location">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Bello Horizonte, Marbella East
+      </div>
+    </div>
+    <div class="prop-header__price">
+      <div class="prop-header__price-tag">Price on request</div>
+      <div class="prop-header__price-label">Exclusive to Rio Real Residences</div>
+    </div>
+  </div>
+</div>
+
+<!-- Quick specs -->
+<div class="prop-specs">
+  <div class="prop-spec">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    <span class="prop-spec__value">5</span>
+    <span class="prop-spec__label">Bedrooms</span>
+  </div>
+  <div class="prop-spec">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M4 12a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2M4 12v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6"/></svg>
+    <span class="prop-spec__value">4</span>
+    <span class="prop-spec__label">Bathrooms</span>
+  </div>
+  <div class="prop-spec">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg>
+    <span class="prop-spec__value">348 m²</span>
+    <span class="prop-spec__label">Built</span>
+  </div>
+  <div class="prop-spec">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"/><path d="M7 3v18M17 3v18M3 7h4M3 12h18M3 17h4M17 7h4M17 17h4"/></svg>
+    <span class="prop-spec__value">1,052 m²</span>
+    <span class="prop-spec__label">Plot</span>
+  </div>
+  <div class="prop-spec">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+    <span class="prop-spec__value">58 m²</span>
+    <span class="prop-spec__label">Pool</span>
+  </div>
+  <div class="prop-spec">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+    <span class="prop-spec__value">Sea + Mountain</span>
+    <span class="prop-spec__label">Views</span>
+  </div>
+</div>
+
+<!-- Gallery -->
+<div class="prop-gallery">
+  <div class="prop-gallery__grid">
+    <div class="prop-gallery__main">
+      <img src="images/properties/calle-almendro-144/frontal_arquitectura_1700ppi.jpeg" alt="Calle Almendro 144 - Front facade, Bello Horizonte" data-index="0" onclick="openLightbox(0)">
+    </div>
+    <div class="prop-gallery__thumb">
+      <img src="images/properties/calle-almendro-144/piscina_montana_arquitectura_1700ppi.jpeg" alt="Swimming pool with mountain views" data-index="1" onclick="openLightbox(1)">
+    </div>
+    <div class="prop-gallery__thumb">
+      <img src="images/properties/calle-almendro-144/salon_principal_interiorismo_1700ppi.jpeg" alt="Main living room" data-index="2" onclick="openLightbox(2)">
+      <div class="prop-gallery__more" onclick="openLightbox(3)">
+        <span>+38</span>
+        <span>View all photos</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Body: description + sidebar -->
+<div class="prop-body">
+
+  <div class="prop-sections">
+
+    <!-- At a Glance -->
+    <div class="prop-section">
+      <h2 class="prop-section__heading">At a Glance</h2>
+      <div class="at-a-glance">
+        <div class="at-a-glance__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          348 m² built across two floors
+        </div>
+        <div class="at-a-glance__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          1,052 m² private plot
+        </div>
+        <div class="at-a-glance__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          5 bedrooms, 4 bathrooms
+        </div>
+        <div class="at-a-glance__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Master suite with bathtub and shower
+        </div>
+        <div class="at-a-glance__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          58 m² swimming pool
+        </div>
+        <div class="at-a-glance__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          39 m² garage + 33 m² storage
+        </div>
+        <div class="at-a-glance__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Fully equipped outdoor kitchen
+        </div>
+        <div class="at-a-glance__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Solar panels installed
+        </div>
+        <div class="at-a-glance__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Sea and mountain views
+        </div>
+        <div class="at-a-glance__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Marble and parquet flooring throughout
+        </div>
+        <div class="at-a-glance__item" style="grid-column: 1 / -1;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Mature tropical fruit garden with automatic irrigation
+        </div>
+      </div>
+    </div>
+
+    <!-- The Living Room -->
+    <div class="prop-section">
+      <h2 class="prop-section__heading">The Living Room</h2>
+      <p>You enter on the ground floor into a generous, light-filled living space where the sitting room flows naturally into the kitchen. Marble flooring runs throughout, and a fireplace anchors the room - the kind of detail that makes a house feel like a home rather than a showpiece. With direct access to the outdoor kitchen, covered terrace and garden beyond, the ground floor is designed around the way people actually live in Marbella: indoors and outdoors, seamlessly connected.</p>
+    </div>
+
+    <!-- Cooking and Dining -->
+    <div class="prop-section">
+      <h2 class="prop-section__heading">Cooking and Dining</h2>
+      <p>The indoor kitchen integrates with the living space on the ground floor, while the real centrepiece for anyone who loves to entertain is the fully equipped outdoor kitchen. Fitted with an oven, laundry area, kitchen, guest toilet and a 200-litre water heater, this is a proper outdoor room rather than a summer afterthought. Whether it's a long Sunday lunch with family or an evening barbecue as the sun drops behind the mountains, this space earns its place every day of the year.</p>
+    </div>
+
+    <!-- Gallery image break -->
+    <img src="images/properties/calle-almendro-144/mesa_chambao_arquitectura_1700ppi.jpeg" alt="Outdoor kitchen and dining terrace" style="width:100%; aspect-ratio:16/7; object-fit:cover; cursor:pointer;" onclick="openLightbox(4)">
+
+    <!-- Bedrooms -->
+    <div class="prop-section">
+      <h2 class="prop-section__heading">Bedrooms</h2>
+      <p>The villa offers five bedrooms across two floors, each with its own character. On the ground floor, two bedrooms feature parquet flooring, built-in wardrobes and air conditioning - practical, comfortable and well-finished.</p>
+      <p>Upstairs, the three remaining bedrooms make the most of the villa's elevated position. The master suite is genuinely generous, with enough space for a sitting area, and benefits from a private en suite with both bathtub and shower. A second bedroom opens onto its own private balcony with mountain views. The third looks out towards the sea. Two very different outlooks, both worth waking up to.</p>
+    </div>
+
+    <!-- Bathrooms -->
+    <div class="prop-section">
+      <h2 class="prop-section__heading">Bathrooms</h2>
+      <p>Four bathrooms serve the five bedrooms comfortably. The ground floor bathroom features a shower, while the master en suite upstairs offers the option of both bathtub and shower. Recent renovations on the upper floor mean the bathrooms, along with the floors and windows, have been refreshed to a modern standard while retaining the warmth of the original villa.</p>
+    </div>
+
+    <!-- Gallery image break -->
+    <img src="images/properties/calle-almendro-144/dormitorio1_interiorismo_1700ppi.jpeg" alt="Master bedroom" style="width:100%; aspect-ratio:16/7; object-fit:cover; cursor:pointer;" onclick="openLightbox(5)">
+
+    <!-- The Outdoors -->
+    <div class="prop-section">
+      <h2 class="prop-section__heading">The Outdoors</h2>
+      <p>This is where the property really distinguishes itself. The 58 m² pool is one of the largest on a private residential plot in the area, surrounded by mature planting that ensures complete privacy. The garden wraps around the villa with the kind of established vegetation that simply cannot be bought new - it takes decades to create and adds a quality of seclusion that is increasingly rare.</p>
+      <p>The fruit garden is extraordinary by any standard. Fully productive and thoughtfully planted, it includes two avocado trees, four fig trees, two mango trees, two orange trees, two grapevines, a lemon tree, a papaya, a loquat and a peach tree. An automatic electric irrigation system keeps everything in excellent condition year-round, including when the owners are away. Fresh seasonal fruit from your own garden for much of the year is one of those simple pleasures that quickly becomes non-negotiable.</p>
+      <p>Solar panels reduce energy consumption and running costs. The 39 m² garage and 33 m² storage room add practical value. A further 69 m² utility area offers additional storage or the potential for a custom project.</p>
+    </div>
+
+    <!-- Gallery image break -->
+    <img src="images/properties/calle-almendro-144/piscina_terraza_vistas_arquitectura_1700ppi.jpeg" alt="Pool terrace with sea views" style="width:100%; aspect-ratio:16/7; object-fit:cover; cursor:pointer;" onclick="openLightbox(6)">
+
+  </div>
+
+  <!-- Sidebar -->
+  <div class="prop-sidebar">
+    <div class="sidebar-card">
+      <h4>Arrange a Viewing</h4>
+      <p>Our team can organise a private visit at your convenience, and provide full supporting information for this and similar properties.</p>
+      <a href="#" class="btn btn--primary" data-wa="Hello, I'd like to arrange a viewing for Calle Almendro 144 in Bello Horizonte.">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="display:inline; margin-right:6px; vertical-align:-2px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        WhatsApp Us
+      </a>
+      <a href="contact.html" class="btn btn--outline-dark">Send an Enquiry</a>
+    </div>
+
+    <div class="sidebar-card">
+      <p class="label" style="margin-bottom:8px;">Property Details</p>
+      <div style="display:flex; flex-direction:column; gap:10px; margin-top:8px;">
+        <div style="display:flex; justify-content:space-between; padding-bottom:10px; border-bottom:1px solid var(--border); font-size:0.88rem;">
+          <span style="color:var(--light-text);">Type</span>
+          <span style="color:var(--dark); font-weight:500;">Villa</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; padding-bottom:10px; border-bottom:1px solid var(--border); font-size:0.88rem;">
+          <span style="color:var(--light-text);">Status</span>
+          <span style="color:var(--dark); font-weight:500;">For Sale</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; padding-bottom:10px; border-bottom:1px solid var(--border); font-size:0.88rem;">
+          <span style="color:var(--light-text);">Area</span>
+          <span style="color:var(--dark); font-weight:500;">Bello Horizonte</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; padding-bottom:10px; border-bottom:1px solid var(--border); font-size:0.88rem;">
+          <span style="color:var(--light-text);">Built</span>
+          <span style="color:var(--dark); font-weight:500;">348 m²</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; padding-bottom:10px; border-bottom:1px solid var(--border); font-size:0.88rem;">
+          <span style="color:var(--light-text);">Plot</span>
+          <span style="color:var(--dark); font-weight:500;">1,052 m²</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; padding-bottom:10px; border-bottom:1px solid var(--border); font-size:0.88rem;">
+          <span style="color:var(--light-text);">Bedrooms</span>
+          <span style="color:var(--dark); font-weight:500;">5</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; font-size:0.88rem;">
+          <span style="color:var(--light-text);">Bathrooms</span>
+          <span style="color:var(--dark); font-weight:500;">4</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-card" style="background:var(--dark); border-color:var(--dark); color:#fff;">
+      <p class="label" style="color:var(--teal); margin-bottom:12px;">Download Brochure</p>
+      <h4 style="color:#fff; margin-bottom:8px;">Full property details</h4>
+      <p style="color:rgba(255,255,255,0.6); margin-bottom:20px;">Floorplans, full specification and additional photography.</p>
+      <a href="#brochure" class="btn btn--primary" style="text-align:center; display:block; padding:14px 20px;">Get the Brochure</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Why We Love This Villa -->
+<div class="love-section">
+  <div class="love-section__inner">
+    <div class="love-section__text">
+      <p class="label love-section__label">A Personal Note</p>
+      <h2>Why We Love This Villa</h2>
+      <p>Properties like this are becoming genuinely hard to find. It has the space, the plot and the views that buyers come to Marbella looking for. But what sets it apart is the garden - mature, private, productive and completely its own world.</p>
+      <p>You can sit by the pool surrounded by mango and avocado trees, with sea views in one direction and mountains in the other, and feel entirely removed from everything. And yet Marbella centre is five minutes away.</p>
+      <p>The solar panels, recent renovations and outdoor kitchen tell you this is a home that has been maintained with care and thought. It is ready to be lived in, not worked on.</p>
+      <p>For a family looking to put down roots in Rio Real, or an investor seeking a property with serious holiday rental potential, this is one to see in person. It is the kind of home that makes much more sense once you are standing in it.</p>
+      <div class="love-section__author">
+        <img src="images/louise-brace.jpg" alt="Louise Brace">
+        <div>
+          <div class="love-section__author-name">Louise Brace</div>
+          <div class="love-section__author-title">Founder, Rio Real Residences</div>
+        </div>
+      </div>
+    </div>
+    <div class="love-section__image">
+      <img src="images/properties/calle-almendro-144/jardin_arquitectura_1700ppi.jpeg" alt="Mature tropical garden with pool">
+    </div>
+  </div>
+</div>
+
+<!-- Brochure Download -->
+<div class="brochure-section" id="brochure">
+  <div class="brochure-section__inner">
+    <span class="label">Downloadable Brochure</span>
+    <h2>Get the Full Property Pack</h2>
+    <p>Floorplans, full specification and additional photography. Enter your details below and we'll give you instant access to the brochure.</p>
+
+    <div class="brochure-form" id="brochure-form-wrapper">
+      <!-- Replace YOUR_FORMSPREE_ID with your actual Formspree form ID -->
+      <form id="brochure-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+        <input type="hidden" name="property" value="Calle Almendro 144, Bello Horizonte">
+        <div class="brochure-form__fields">
+          <div class="form-group">
+            <label for="brochure-name">Full Name</label>
+            <input type="text" id="brochure-name" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="brochure-email">Email Address</label>
+            <input type="email" id="brochure-email" name="email" placeholder="your@email.com" required>
+          </div>
+        </div>
+        <div class="form-optin">
+          <input type="checkbox" id="brochure-optin" name="optin" value="yes">
+          <label for="brochure-optin">I'd like to receive property updates and Marbella news from Rio Real Residences. You can unsubscribe at any time.</label>
+        </div>
+        <button type="submit" class="brochure-form__submit" id="brochure-submit">
+          Get Instant Access
+        </button>
+      </form>
+      <div class="brochure-success" id="brochure-success">
+        <div class="brochure-success__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3>Your brochure is ready</h3>
+        <p>Thank you. Click below to download the full property pack for Calle Almendro 144.</p>
+        <a href="brochures/calle-almendro-144-brochure.pdf" class="brochure-download-btn" download>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Brochure (PDF)
+        </a>
+      </div>
+    </div>
+
+    <p style="font-size:0.75rem; color:var(--light-text); margin-top:16px; text-align:center;">Your details will be handled in accordance with our <a href="#" style="color:var(--teal);">Privacy Policy</a>. We will never share your information with third parties.</p>
+  </div>
+</div>
+
+<!-- Contact strip -->
+<div class="contact-strip" style="margin-top:0;">
+  <div class="container">
+    <p class="label">Interested in this property?</p>
+    <h2>Let's arrange a viewing</h2>
+    <p>Our team can organise a private visit at your convenience, and provide a full information pack for this and similar properties.</p>
+    <div class="contact-strip__actions">
+      <a href="#" class="btn btn--whatsapp" data-wa="Hello, I'd like to arrange a viewing for Calle Almendro 144 in Bello Horizonte.">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+      <a href="contact.html" class="btn btn--primary">Request a Viewing</a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="nav__logo" style="margin-bottom:16px">
+          <span class="nav__logo-main">Rio Real Residences</span>
+        </div>
+        <p>The definitive specialist agency for luxury property in Rio Real, Marbella East.</p>
+        <div class="footer__contact-links">
+          <a href="#" class="footer__contact-link" data-wa="">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <a href="#" class="footer__contact-link" data-email="">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@riorealresidences.com
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h5>Properties</h5>
+        <ul class="footer__links">
+          <li><a href="properties.html" class="footer__link">For Sale</a></li>
+          <li><a href="properties.html" class="footer__link">For Rent</a></li>
+          <li><a href="properties.html" class="footer__link">Villas</a></li>
+          <li><a href="properties.html" class="footer__link">Apartments</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Agency</h5>
+        <ul class="footer__links">
+          <li><a href="about.html" class="footer__link">About Us</a></li>
+          <li><a href="vip-owners" class="footer__link">VIP Owner's Club</a></li>
+          <li><a href="contact.html" class="footer__link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>The Area</h5>
+        <ul class="footer__links">
+          <li><a href="about.html#area" class="footer__link">Rio Real Golf</a></li>
+          <li><a href="about.html#area" class="footer__link">Marbella East</a></li>
+          <li><a href="bello-horizonte.html" class="footer__link">Bello Horizonte Guide</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">© 2025 Rio Real Residences S.L. · All rights reserved.</span>
+      <nav class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Legal Notice</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="prop-lightbox" id="prop-lightbox">
+  <button class="prop-lightbox__btn prop-lightbox__prev" onclick="lightboxMove(-1)">&#8592;</button>
+  <img class="prop-lightbox__img" id="lightbox-img" src="" alt="">
+  <button class="prop-lightbox__btn prop-lightbox__next" onclick="lightboxMove(1)">&#8594;</button>
+  <button class="prop-lightbox__close" onclick="closeLightbox()">&#10005;</button>
+  <div class="prop-lightbox__counter" id="lightbox-counter"></div>
+</div>
+
+<script src="js/main.js?v=2"></script>
+<script>
+  const galleryImages = [
+    { src: 'images/properties/calle-almendro-144/frontal_arquitectura_1700ppi.jpeg', alt: 'Front facade' },
+    { src: 'images/properties/calle-almendro-144/piscina_montana_arquitectura_1700ppi.jpeg', alt: 'Pool with mountain views' },
+    { src: 'images/properties/calle-almendro-144/salon_principal_interiorismo_1700ppi.jpeg', alt: 'Main living room' },
+    { src: 'images/properties/calle-almendro-144/villa_exterior_arquitectura_1700ppi.jpeg', alt: 'Villa exterior' },
+    { src: 'images/properties/calle-almendro-144/mesa_chambao_arquitectura_1700ppi.jpeg', alt: 'Outdoor kitchen and dining' },
+    { src: 'images/properties/calle-almendro-144/dormitorio1_interiorismo_1700ppi.jpeg', alt: 'Master bedroom' },
+    { src: 'images/properties/calle-almendro-144/piscina_terraza_vistas_arquitectura_1700ppi.jpeg', alt: 'Pool terrace with sea views' },
+    { src: 'images/properties/calle-almendro-144/jardin_arquitectura_1700ppi.jpeg', alt: 'Tropical garden' },
+    { src: 'images/properties/calle-almendro-144/piscina_jardin_arquitectura_1700ppi.jpeg', alt: 'Pool and garden' },
+    { src: 'images/properties/calle-almendro-144/piscina_terraza_arquitectura_1700ppi.jpeg', alt: 'Pool terrace' },
+    { src: 'images/properties/calle-almendro-144/salon_amplio_interiorismo_1700ppi.jpeg', alt: 'Open-plan living area' },
+    { src: 'images/properties/calle-almendro-144/salon_1_interiorismo_1700ppi.jpeg', alt: 'Living room' },
+    { src: 'images/properties/calle-almendro-144/saloncito_1_interiorismo_1700ppi.jpeg', alt: 'Sitting area' },
+    { src: 'images/properties/calle-almendro-144/cocina barra.jpg', alt: 'Kitchen bar' },
+    { src: 'images/properties/calle-almendro-144/cocina detalla.jpg', alt: 'Kitchen detail' },
+    { src: 'images/properties/calle-almendro-144/dormitorio2_interiorismo_1700ppi.jpeg', alt: 'Bedroom 2' },
+    { src: 'images/properties/calle-almendro-144/dormitorio5_interiorismo_1700ppi.jpeg', alt: 'Bedroom 3' },
+    { src: 'images/properties/calle-almendro-144/dormitorio6_interiorismo_1700ppi.jpeg', alt: 'Bedroom 4' },
+    { src: 'images/properties/calle-almendro-144/dormitorio7_interiorismo_1700ppi.jpeg', alt: 'Bedroom 5' },
+    { src: 'images/properties/calle-almendro-144/dormitorio 2.jpeg', alt: 'Guest bedroom' },
+    { src: 'images/properties/calle-almendro-144/dormitorio 4.jpeg', alt: 'Bedroom with balcony' },
+    { src: 'images/properties/calle-almendro-144/dormitorio_interiorismo_1700ppi.jpeg', alt: 'Master suite' },
+    { src: 'images/properties/calle-almendro-144/bano_3_interiorismo_1700ppi.jpeg', alt: 'Bathroom 1' },
+    { src: 'images/properties/calle-almendro-144/baño.jpg', alt: 'Bathroom 2' },
+    { src: 'images/properties/calle-almendro-144/baño2.jpg', alt: 'Bathroom 3' },
+    { src: 'images/properties/calle-almendro-144/baño 4.jpg', alt: 'Bathroom 4' },
+    { src: 'images/properties/calle-almendro-144/baño5.jpg', alt: 'Master en suite' },
+    { src: 'images/properties/calle-almendro-144/barbacoa.jpg', alt: 'BBQ area' },
+    { src: 'images/properties/calle-almendro-144/terraza.jpg', alt: 'Terrace' },
+    { src: 'images/properties/calle-almendro-144/parte_trasera_arquitectura_1700ppi.jpeg', alt: 'Rear of property' },
+    { src: 'images/properties/calle-almendro-144/frontal_trasero_arquitectura_1700ppi.jpeg', alt: 'Rear facade' },
+    { src: 'images/properties/calle-almendro-144/frontal_entrada_arquitectura_1700ppi.jpeg', alt: 'Front entrance' },
+    { src: 'images/properties/calle-almendro-144/entrada_fachada_arquitectura_1700ppi.jpeg', alt: 'Entrance facade' },
+    { src: 'images/properties/calle-almendro-144/puerta_entrada_principal_arquitectura_1700ppi.jpeg', alt: 'Main entrance door' },
+    { src: 'images/properties/calle-almendro-144/salida_puerta_principal_arquitectura_1700ppi.jpeg', alt: 'Main door exit' },
+    { src: 'images/properties/calle-almendro-144/patio_arquitectura_1700ppi.jpeg', alt: 'Patio' },
+    { src: 'images/properties/calle-almendro-144/garaje_arquitectura_1700ppi.jpeg', alt: 'Garage' },
+    { src: 'images/properties/calle-almendro-144/parking_interior_arquitectura_1700ppi.jpeg', alt: 'Interior parking' },
+    { src: 'images/properties/calle-almendro-144/entrada_coche_arquitectura_1700ppi.jpeg', alt: 'Vehicle entrance' },
+    { src: 'images/properties/calle-almendro-144/vista_lateral_arquitectura_1700ppi.jpeg', alt: 'Lateral view' },
+    { src: 'images/properties/calle-almendro-144/estudio.jpeg', alt: 'Study' },
+    { src: 'images/properties/calle-almendro-144/despacho.png', alt: 'Home office' },
+  ];
+
+  let currentIndex = 0;
+
+  function openLightbox(index) {
+    currentIndex = index;
+    showLightboxImage();
+    document.getElementById('prop-lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    document.getElementById('prop-lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function lightboxMove(dir) {
+    currentIndex = (currentIndex + dir + galleryImages.length) % galleryImages.length;
+    showLightboxImage();
+  }
+
+  function showLightboxImage() {
+    const img = galleryImages[currentIndex];
+    document.getElementById('lightbox-img').src = img.src;
+    document.getElementById('lightbox-img').alt = img.alt;
+    document.getElementById('lightbox-counter').textContent = (currentIndex + 1) + ' / ' + galleryImages.length;
+  }
+
+  document.getElementById('prop-lightbox').addEventListener('click', function(e) {
+    if (e.target === this) closeLightbox();
+  });
+
+  document.addEventListener('keydown', function(e) {
+    const lb = document.getElementById('prop-lightbox');
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'ArrowLeft') lightboxMove(-1);
+    if (e.key === 'ArrowRight') lightboxMove(1);
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+  // Brochure form - AJAX submit via Formspree, then reveal download
+  const form = document.getElementById('brochure-form');
+  const submitBtn = document.getElementById('brochure-submit');
+  const successDiv = document.getElementById('brochure-success');
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        form.style.display = 'none';
+        successDiv.style.display = 'block';
+      } else {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Get Instant Access';
+        alert('Something went wrong. Please try again or email us directly at charlotte@riorealresidences.com');
+      }
+    } catch (err) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Get Instant Access';
+      alert('Something went wrong. Please try again or email us directly at charlotte@riorealresidences.com');
+    }
+  });
+</script>
+</body>
+</html>
