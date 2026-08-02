@@ -111,8 +111,8 @@ p { font-size: 1rem; color: var(--mid); line-height: 1.75; }
 }
 
 .nav__logo-img {
-  height: 36px;
-  width: 36px;
+  height: 48px;
+  width: 48px;
   object-fit: contain;
   display: block;
   transition: filter 0.3s var(--ease);
@@ -122,7 +122,7 @@ p { font-size: 1rem; color: var(--mid); line-height: 1.75; }
 .nav__logo-text {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
+  margin-left: 12px;
   line-height: 1;
 }
 
@@ -133,9 +133,9 @@ p { font-size: 1rem; color: var(--mid); line-height: 1.75; }
 
 .nav__logo-main {
   font-family: var(--font-sans);
-  font-size: 0.68rem;
+  font-size: 0.88rem;
   font-weight: 500;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--dark);
   transition: color 0.3s;
