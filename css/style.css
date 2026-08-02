@@ -1734,19 +1734,27 @@ p { font-size: 1rem; color: var(--mid); line-height: 1.75; }
   grid-template-columns: repeat(3, 1fr);
 }
 
-@media (max-width: 640px) {
-  .listings-grid { grid-template-columns: 1fr !important; }
-
+@media (max-width: 768px) {
+  /* Logo: smaller on all mobile/tablet sizes */
   .nav__logo-img { height: 56px; }
 
+  /* Any inline-style 2-col grid: collapse to single column */
+  .mobile-stack { grid-template-columns: 1fr !important; }
+
+  /* Hide decorative photo pairs that look bad on mobile */
+  .mobile-hide { display: none !important; }
+
+  /* Property portfolio: single column */
+  .listings-grid { grid-template-columns: 1fr !important; }
+
+  /* Hero */
   .hero__title { font-size: clamp(2.2rem, 10vw, 3.5rem); }
   .hero { min-height: 85svh; }
 
+  /* Tighter section padding */
   .section { padding-block: clamp(40px, 10vw, 64px); }
 
-  .vip-benefits { grid-template-columns: 1fr !important; }
-  .who-grid { grid-template-columns: 1fr !important; }
-
+  /* Contact strip buttons stack */
   .contact-strip__actions { flex-direction: column; align-items: stretch; }
   .contact-strip__actions .btn { text-align: center; justify-content: center; }
 }
