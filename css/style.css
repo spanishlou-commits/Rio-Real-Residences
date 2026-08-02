@@ -111,8 +111,8 @@ p { font-size: 1rem; color: var(--mid); line-height: 1.75; }
 }
 
 .nav__logo-img {
-  height: 44px;
-  width: 44px;
+  height: 36px;
+  width: 36px;
   object-fit: contain;
   display: block;
   transition: filter 0.3s var(--ease);
@@ -122,35 +122,29 @@ p { font-size: 1rem; color: var(--mid); line-height: 1.75; }
 .nav__logo-text {
   display: flex;
   flex-direction: column;
-  margin-left: 6px;
-  gap: 3px;
+  margin-left: 10px;
   line-height: 1;
 }
 
-/* On transparent/dark hero: invert to white */
+/* On transparent/dark hero: invert mark to white */
 .nav--light:not(.scrolled) .nav__logo-img {
   filter: brightness(0) invert(1);
 }
 
 .nav__logo-main {
-  font-family: var(--font-serif);
-  font-size: 0.95rem;
-  font-weight: 400;
-  letter-spacing: 0.08em;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
   color: var(--dark);
   transition: color 0.3s;
 }
 
-.nav--light .nav__logo-main { color: var(--white); }
+.nav--light:not(.scrolled) .nav__logo-main { color: var(--white); }
 .nav.scrolled .nav__logo-main { color: var(--dark); }
 
-.nav__logo-sub {
-  font-size: 0.62rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--teal);
-  margin-top: 2px;
-}
+.nav__logo-sub { display: none; }
 
 .nav__links {
   display: flex;
