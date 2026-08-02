@@ -1728,45 +1728,25 @@ p { font-size: 1rem; color: var(--mid); line-height: 1.75; }
 
 /* ── Mobile improvements ──────────────────────────────────────────────────── */
 
-/* Own listings grid on homepage */
+/* Own listings grid on homepage — 3 cols on desktop, 1 col on phone */
 .listings-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
-/* Logo size */
-@media (max-width: 768px) {
-  .nav__logo-img { height: 64px; }
-
-  /* Own listings: single column on mobile */
+@media (max-width: 640px) {
   .listings-grid { grid-template-columns: 1fr; }
 
-  /* Heading sizes */
-  h1 { font-size: clamp(2rem, 8vw, 3.5rem); }
-  h2 { font-size: clamp(1.6rem, 6vw, 2.8rem); }
-  h3 { font-size: clamp(1.2rem, 4vw, 1.6rem); }
+  .nav__logo-img { height: 56px; }
 
-  /* Hero */
-  .hero__title { font-size: clamp(2.4rem, 9vw, 4rem); }
+  .hero__title { font-size: clamp(2.2rem, 10vw, 3.5rem); }
   .hero { min-height: 85svh; }
 
-  /* About split: hide the floating images, show content full-width */
-  .about-split { gap: 24px; }
-  .about-image-stack { display: none; }
+  .section { padding-block: clamp(40px, 10vw, 64px); }
 
-  /* Sections: tighter vertical padding on mobile */
-  .section { padding-block: clamp(48px, 10vw, 80px); }
-
-  /* VIP benefit boxes: single column */
   .vip-benefits { grid-template-columns: 1fr !important; }
-
-  /* Who We Help grid */
   .who-grid { grid-template-columns: 1fr !important; }
 
-  /* Contact strip actions */
   .contact-strip__actions { flex-direction: column; align-items: stretch; }
   .contact-strip__actions .btn { text-align: center; justify-content: center; }
-
-  /* Footer */
-  .footer__nav { grid-template-columns: 1fr 1fr; }
 }
