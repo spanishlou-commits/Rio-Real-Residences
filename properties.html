@@ -87,6 +87,7 @@
           <option value="Torre Real">Torre Real</option>
           <option value="Lomas de Pozuelo">Lomas de Pozuelo</option>
           <option value="Bello Horizonte">Bello Horizonte</option>
+          <option value="Real Panorama">Real Panorama</option>
         </select>
       </div>
 
@@ -160,8 +161,8 @@
 <!-- Properties grid -->
 <div class="properties-list">
 
-  <!-- Pinned exclusive listing: Calle Almendro 144 -->
-  <div class="properties-grid" style="margin-bottom:0;padding-bottom:0;">
+  <!-- Pinned exclusive listing: Real Panorama -->
+  <div class="properties-grid" id="pinned-listing" style="margin-bottom:0;padding-bottom:0;">
     <a href="calle-almendro-144.html" class="property-card">
       <div class="property-card__image">
         <img src="images/properties/calle-almendro-144/piscina_jardin_arquitectura_1700ppi.jpeg" alt="Calle Almendro 144, Bello Horizonte" loading="lazy">
@@ -169,8 +170,8 @@
       </div>
       <div class="property-card__body">
         <div class="property-card__type">Villa</div>
-        <h4 class="property-card__title">Calle Almendro 144</h4>
-        <div class="property-card__location">Bello Horizonte, Marbella East</div>
+        <h4 class="property-card__title">Real Panorama</h4>
+        <div class="property-card__location">Real Panorama, Bello Horizonte</div>
         <div class="property-card__specs">
           <div class="property-card__spec">
             <span class="property-card__spec-value">5</span>
@@ -271,5 +272,18 @@
 </footer>
 
 <script src="js/main.js?v=2"></script>
+<script>
+  // Show/hide pinned Real Panorama card based on area filter
+  document.addEventListener('DOMContentLoaded', () => {
+    const areaFilter = document.getElementById('filter-area');
+    const pinned = document.getElementById('pinned-listing');
+    const showForAreas = ['', 'Bello Horizonte', 'Real Panorama'];
+    const update = () => {
+      pinned.style.display = showForAreas.includes(areaFilter.value) ? '' : 'none';
+    };
+    areaFilter.addEventListener('change', update);
+    document.getElementById('search-clear')?.addEventListener('click', () => setTimeout(update, 0));
+  });
+</script>
 </body>
 </html>
