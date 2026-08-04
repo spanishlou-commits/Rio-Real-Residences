@@ -273,16 +273,43 @@
 
 <script src="js/main.js?v=2"></script>
 <script>
-  // Show/hide pinned Real Panorama card based on area filter
+  // Show/hide pinned Real Panorama card and fix count when area filter changes
   document.addEventListener('DOMContentLoaded', () => {
     const areaFilter = document.getElementById('filter-area');
     const pinned = document.getElementById('pinned-listing');
+    const countEl = document.getElementById('results-count');
     const showForAreas = ['', 'Bello Horizonte', 'Real Panorama'];
+
     const update = () => {
-      pinned.style.display = showForAreas.includes(areaFilter.value) ? '' : 'none';
+      const area = areaFilter.value;
+      const showPinned = showForAreas.includes(area);
+      pinned.style.display = showPinned ? '' : 'none';
+
+      // When Real Panorama is selected: fix count and hide empty-state message
+      if (area === 'Real Panorama') {
+        setTimeout(() => {
+          const grid = document.getElementById('properties-grid');
+          const emptyMsg = grid?.querySelector('p');
+          if (emptyMsg) emptyMsg.style.display = 'none';
+          if (countEl) countEl.textContent = '1 property found';
+        }, 0);
+      }
     };
+
     areaFilter.addEventListener('change', update);
     document.getElementById('search-clear')?.addEventListener('click', () => setTimeout(update, 0));
+
+    // Also patch render calls via MutationObserver so the fix applies on any re-render
+    const grid = document.getElementById('properties-grid');
+    if (grid) {
+      new MutationObserver(() => {
+        if (areaFilter.value === 'Real Panorama') {
+          const emptyMsg = grid.querySelector('p');
+          if (emptyMsg) emptyMsg.style.display = 'none';
+          if (countEl) countEl.textContent = '1 property found';
+        }
+      }).observe(grid, { childList: true });
+    }
   });
 </script>
 </body>
