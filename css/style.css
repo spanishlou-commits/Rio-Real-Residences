@@ -1571,6 +1571,21 @@ p { font-size: 1rem; color: var(--mid); line-height: 1.75; }
 
 .footer__contact-link:hover { color: var(--teal); }
 
+.footer__social {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+}
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.55);
+  transition: color 0.3s;
+}
+.footer__social-link:hover { color: var(--teal); }
+.footer__social-link svg { display: block; }
+
 .footer__col h5 {
   font-size: 0.65rem;
   font-weight: 700;
