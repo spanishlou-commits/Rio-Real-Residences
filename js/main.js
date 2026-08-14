@@ -358,12 +358,18 @@ async function initPropertyDetail() {
   // Gallery
   const galleryEl = document.getElementById('property-gallery');
   const thumbs = p.images.slice(1, 3);
+  const extraImgs = p.images.slice(3);
   galleryEl.innerHTML = `
     <div class="property-gallery__main" data-lightbox style="cursor:zoom-in">
       <img src="${p.images[0]}" alt="${p.title}">
     </div>
     ${thumbs.map(img => `
       <div class="property-gallery__thumb" data-lightbox>
+        <img src="${img}" alt="${p.title}" loading="lazy">
+      </div>
+    `).join('')}
+    ${extraImgs.map(img => `
+      <div class="property-gallery__thumb property-gallery__thumb--extra" data-lightbox>
         <img src="${img}" alt="${p.title}" loading="lazy">
       </div>
     `).join('')}
