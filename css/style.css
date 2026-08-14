@@ -1723,10 +1723,25 @@ p { font-size: 1rem; color: var(--mid); line-height: 1.75; }
 
   .footer__top { grid-template-columns: 1fr; }
 
-  .property-gallery { grid-template-columns: 1fr; grid-template-rows: 300px; height: auto; }
+  .property-gallery {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 4px;
+    height: 260px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .property-gallery__main,
+  .property-gallery__thumb {
+    flex: 0 0 85vw;
+    max-width: 85vw;
+    height: 260px;
+    scroll-snap-align: start;
+    display: block;
+  }
   .property-gallery__main { grid-row: auto; }
-  .property-gallery__thumb { display: none; }
-  .property-gallery__thumb:first-of-type { display: block; }
 
   .property-detail__specs { grid-template-columns: 1fr 1fr; }
   .property-detail__spec:nth-child(2) { border-right: none; }
