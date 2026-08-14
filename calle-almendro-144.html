@@ -33,7 +33,7 @@
     .prop-header {
       max-width: var(--max-w);
       margin-inline: auto;
-      padding: 100px var(--gutter) 0;
+      padding: 24px var(--gutter) 0;
     }
     .prop-header__meta {
       display: flex;
@@ -115,7 +115,7 @@
     .prop-gallery {
       max-width: var(--max-w);
       margin-inline: auto;
-      padding: 32px var(--gutter) 0;
+      padding: calc(72px + 16px) var(--gutter) 0;
     }
     .prop-gallery__grid {
       display: grid;
@@ -606,6 +606,25 @@
   </div>
 </div>
 
+<!-- Gallery -->
+<div class="prop-gallery">
+  <div class="prop-gallery__grid">
+    <div class="prop-gallery__main">
+      <img src="images/properties/calle-almendro-144/frontal_arquitectura_1700ppi.jpeg" alt="Calle Almendro 144 - Front facade, Bello Horizonte" data-index="0" onclick="openLightbox(0)">
+    </div>
+    <div class="prop-gallery__thumb">
+      <img src="images/properties/calle-almendro-144/piscina_montana_arquitectura_1700ppi.jpeg" alt="Swimming pool with mountain views" data-index="1" onclick="openLightbox(1)">
+    </div>
+    <div class="prop-gallery__thumb">
+      <img src="images/properties/calle-almendro-144/salon_principal_interiorismo_1700ppi.jpeg" alt="Main living room" data-index="2" onclick="openLightbox(2)">
+      <div class="prop-gallery__more" onclick="openLightbox(3)">
+        <span>+38</span>
+        <span>View all photos</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Breadcrumb -->
 <div class="prop-header" style="padding-bottom: 0;">
   <nav style="font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--light-text); display:flex; gap:8px; align-items:center;">
@@ -669,25 +688,6 @@
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
     <span class="prop-spec__value">Sea + Mountain</span>
     <span class="prop-spec__label">Views</span>
-  </div>
-</div>
-
-<!-- Gallery -->
-<div class="prop-gallery">
-  <div class="prop-gallery__grid">
-    <div class="prop-gallery__main">
-      <img src="images/properties/calle-almendro-144/frontal_arquitectura_1700ppi.jpeg" alt="Calle Almendro 144 - Front facade, Bello Horizonte" data-index="0" onclick="openLightbox(0)">
-    </div>
-    <div class="prop-gallery__thumb">
-      <img src="images/properties/calle-almendro-144/piscina_montana_arquitectura_1700ppi.jpeg" alt="Swimming pool with mountain views" data-index="1" onclick="openLightbox(1)">
-    </div>
-    <div class="prop-gallery__thumb">
-      <img src="images/properties/calle-almendro-144/salon_principal_interiorismo_1700ppi.jpeg" alt="Main living room" data-index="2" onclick="openLightbox(2)">
-      <div class="prop-gallery__more" onclick="openLightbox(3)">
-        <span>+38</span>
-        <span>View all photos</span>
-      </div>
-    </div>
   </div>
 </div>
 
