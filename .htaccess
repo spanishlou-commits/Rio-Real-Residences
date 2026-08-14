@@ -1,16 +1,11 @@
 Options -Indexes
 
-# Prevent HTML pages from being cached by browsers
-<FilesMatch "\.html$">
-  Header set Cache-Control "no-cache, no-store, must-revalidate"
-  Header set Pragma "no-cache"
-  Header set Expires 0
-</FilesMatch>
-
-# Cache static assets aggressively (CSS, JS, images)
-<FilesMatch "\.(css|js|jpg|jpeg|png|gif|svg|webp|woff2|woff)$">
-  Header set Cache-Control "public, max-age=31536000, immutable"
-</FilesMatch>
+# No-cache for pages; long-cache for static assets
+SetEnvIfNoCase Request_URI "\.(css|js|jpg|jpeg|png|gif|svg|webp|woff2|woff|ico)$" is_static
+Header always set Cache-Control "no-cache, no-store, must-revalidate" env=!is_static
+Header always set Pragma "no-cache" env=!is_static
+Header always set Expires "0" env=!is_static
+Header always set Cache-Control "public, max-age=31536000, immutable" env=is_static
 
 RewriteEngine On
 
