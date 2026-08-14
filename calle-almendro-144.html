@@ -138,6 +138,7 @@
     .prop-gallery__main img:hover,
     .prop-gallery__thumb img:hover { opacity: 0.92; }
     .prop-gallery__thumb { position: relative; overflow: hidden; }
+    .prop-gallery__thumb--extra { display: none; }
     .prop-gallery__more {
       position: absolute;
       inset: 0;
@@ -539,6 +540,7 @@
         display: block;
       }
       .prop-gallery__more { display: none; }
+      .prop-gallery__thumb--extra { display: block; }
       .prop-specs { gap: 12px; }
       .prop-spec { padding: 8px 12px; border-right: none; border-bottom: 1px solid var(--border); flex: 1 1 40%; }
       .at-a-glance { grid-template-columns: 1fr; }
@@ -685,6 +687,7 @@
         <span>View all photos</span>
       </div>
     </div>
+    <div id="prop-gallery-extras"></div>
   </div>
 </div>
 
@@ -1054,6 +1057,16 @@
     { src: 'images/properties/calle-almendro-144/estudio.jpeg', alt: 'Study' },
     { src: 'images/properties/calle-almendro-144/despacho.png', alt: 'Home office' },
   ];
+
+  // Populate extra slides for mobile scroll strip (indices 3+)
+  const extrasEl = document.getElementById('prop-gallery-extras');
+  if (extrasEl) {
+    extrasEl.innerHTML = galleryImages.slice(3).map((img, i) =>
+      `<div class="prop-gallery__thumb prop-gallery__thumb--extra" onclick="openLightbox(${i + 3})">
+        <img src="${img.src}" alt="${img.alt}" loading="lazy">
+      </div>`
+    ).join('');
+  }
 
   let currentIndex = 0;
 
