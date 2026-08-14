@@ -1,7 +1,7 @@
 /* ── Config ─────────────────────────────────────────────────────────────── */
 const CONFIG = {
   whatsapp: '34687488152',
-  email:    'info@riorealresidences.com',
+  email:    'louise@riorealresidences.com',
   currency: 'EUR',
 };
 
