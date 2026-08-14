@@ -33,7 +33,7 @@
     .prop-header {
       max-width: var(--max-w);
       margin-inline: auto;
-      padding: 100px var(--gutter) 0;
+      padding: 32px var(--gutter) 0;
     }
     .prop-header__meta {
       display: flex;
@@ -112,12 +112,11 @@
     .prop-spec svg { color: var(--teal); }
 
     /* ── Gallery ──────────────────────────────────────────────────────────── */
-    .prop-page-wrap { display: contents; }
-    .prop-gallery--mobile-top { display: none; }
     .prop-gallery {
       max-width: var(--max-w);
       margin-inline: auto;
       padding: 32px var(--gutter) 0;
+      padding-top: calc(72px + 32px);
     }
     .prop-gallery__grid {
       display: grid;
@@ -521,8 +520,7 @@
       .love-section__image img { aspect-ratio: 16/9; }
     }
     @media (max-width: 700px) {
-      .prop-gallery--mobile-top { display: block; padding-top: calc(72px + 8px); }
-      .prop-page-wrap .prop-gallery { display: none; }
+      .prop-gallery { padding-top: calc(72px + 8px); }
 
       .prop-gallery__grid {
         display: flex;
@@ -610,8 +608,8 @@
   </div>
 </div>
 
-<!-- Gallery (mobile only — sits right below nav) -->
-<div class="prop-gallery prop-gallery--mobile-top">
+<!-- Gallery -->
+<div class="prop-gallery">
   <div class="prop-gallery__grid">
     <div class="prop-gallery__main">
       <img src="images/properties/calle-almendro-144/frontal_arquitectura_1700ppi.jpeg" alt="Calle Almendro 144 - Front facade, Bello Horizonte" data-index="0" onclick="openLightbox(0)">
@@ -628,8 +626,6 @@
     </div>
   </div>
 </div>
-
-<div class="prop-page-wrap">
 
 <!-- Breadcrumb -->
 <div class="prop-header" style="padding-bottom: 0;">
@@ -715,8 +711,6 @@
     </div>
   </div>
 </div>
-
-</div><!-- end .prop-page-wrap -->
 
 <!-- Body: description + sidebar -->
 <div class="prop-body">
