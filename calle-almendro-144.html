@@ -687,7 +687,6 @@
         <span>View all photos</span>
       </div>
     </div>
-    <div id="prop-gallery-extras"></div>
   </div>
 </div>
 
@@ -1059,13 +1058,15 @@
   ];
 
   // Populate extra slides for mobile scroll strip (indices 3+)
-  const extrasEl = document.getElementById('prop-gallery-extras');
-  if (extrasEl) {
-    extrasEl.innerHTML = galleryImages.slice(3).map((img, i) =>
-      `<div class="prop-gallery__thumb prop-gallery__thumb--extra" onclick="openLightbox(${i + 3})">
-        <img src="${img.src}" alt="${img.alt}" loading="lazy">
-      </div>`
-    ).join('');
+  const galleryGrid = document.querySelector('.prop-gallery__grid');
+  if (galleryGrid) {
+    galleryImages.slice(3).forEach((img, i) => {
+      const div = document.createElement('div');
+      div.className = 'prop-gallery__thumb prop-gallery__thumb--extra';
+      div.onclick = () => openLightbox(i + 3);
+      div.innerHTML = `<img src="${img.src}" alt="${img.alt}" loading="lazy">`;
+      galleryGrid.appendChild(div);
+    });
   }
 
   let currentIndex = 0;
