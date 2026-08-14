@@ -519,11 +519,26 @@
     }
     @media (max-width: 700px) {
       .prop-gallery__grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: 280px 200px;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        gap: 4px;
+        height: 260px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        grid-template-columns: unset;
+        grid-template-rows: unset;
       }
-      .prop-gallery__main { grid-row: auto; }
-      .prop-gallery__thumb:nth-child(3) { display: none; }
+      .prop-gallery__main,
+      .prop-gallery__thumb {
+        flex: 0 0 85vw;
+        max-width: 85vw;
+        height: 260px;
+        scroll-snap-align: start;
+        display: block;
+      }
+      .prop-gallery__more { display: none; }
       .prop-specs { gap: 12px; }
       .prop-spec { padding: 8px 12px; border-right: none; border-bottom: 1px solid var(--border); flex: 1 1 40%; }
       .at-a-glance { grid-template-columns: 1fr; }
