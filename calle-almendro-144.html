@@ -113,6 +113,7 @@
 
     /* ── Gallery ──────────────────────────────────────────────────────────── */
     .prop-page-wrap { display: contents; }
+    .prop-gallery--mobile-top { display: none; }
     .prop-gallery {
       max-width: var(--max-w);
       margin-inline: auto;
@@ -520,9 +521,8 @@
       .love-section__image img { aspect-ratio: 16/9; }
     }
     @media (max-width: 700px) {
-      .prop-page-wrap { display: flex; flex-direction: column; padding-top: 72px; }
-      .prop-gallery { order: -1; padding-top: 0; }
-      .prop-specs { order: 1; }
+      .prop-gallery--mobile-top { display: block; padding-top: calc(72px + 8px); }
+      .prop-page-wrap .prop-gallery { display: none; }
 
       .prop-gallery__grid {
         display: flex;
@@ -607,6 +607,25 @@
   <div class="contact-links">
     <a href="#" data-wa="">WhatsApp us</a>
     <a href="#" data-email="">louise@riorealresidences.com</a>
+  </div>
+</div>
+
+<!-- Gallery (mobile only — sits right below nav) -->
+<div class="prop-gallery prop-gallery--mobile-top">
+  <div class="prop-gallery__grid">
+    <div class="prop-gallery__main">
+      <img src="images/properties/calle-almendro-144/frontal_arquitectura_1700ppi.jpeg" alt="Calle Almendro 144 - Front facade, Bello Horizonte" data-index="0" onclick="openLightbox(0)">
+    </div>
+    <div class="prop-gallery__thumb">
+      <img src="images/properties/calle-almendro-144/piscina_montana_arquitectura_1700ppi.jpeg" alt="Swimming pool with mountain views" data-index="1" onclick="openLightbox(1)">
+    </div>
+    <div class="prop-gallery__thumb">
+      <img src="images/properties/calle-almendro-144/salon_principal_interiorismo_1700ppi.jpeg" alt="Main living room" data-index="2" onclick="openLightbox(2)">
+      <div class="prop-gallery__more" onclick="openLightbox(3)">
+        <span>+38</span>
+        <span>View all photos</span>
+      </div>
+    </div>
   </div>
 </div>
 
