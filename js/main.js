@@ -250,7 +250,7 @@ async function fetchProperties() {
 function propertyCardHTML(p) {
   const priceHTML = formatPrice(p.price, p.priceNote);
   return `
-    <a href="property.html?id=${p.id}" class="property-card" data-id="${p.id}">
+    <a href="${p.url ? p.url : 'property.html?id=' + p.id}" class="property-card" data-id="${p.id}">
       <div class="property-card__image">
         <img src="${p.thumbnail}" alt="${p.title}" loading="lazy">
         <span class="property-card__badge${p.status === 'For Rent' ? ' property-card__badge--rent' : ''}">${p.status}</span>
@@ -300,7 +300,7 @@ async function initHomePage() {
   const featured = props.filter(p => p.featured);
 
   featuredContainer.innerHTML = featured.map(p => `
-    <a href="property.html?id=${p.id}" class="property-card" data-id="${p.id}">
+    <a href="${p.url ? p.url : 'property.html?id=' + p.id}" class="property-card" data-id="${p.id}">
       <div class="property-card__image">
         <img src="${p.thumbnail}" alt="${p.title}" loading="lazy">
         <span class="property-card__badge${p.status === 'For Rent' ? ' property-card__badge--rent' : ''}">${p.status}</span>
