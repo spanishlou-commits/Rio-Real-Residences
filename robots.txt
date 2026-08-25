@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /property?
 
-Sitemap: https://www.riorealresidences.com/sitemap.xml
+Sitemap: https://riorealresidences.com/sitemap.xml
