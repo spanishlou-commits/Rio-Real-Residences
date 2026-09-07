@@ -7,18 +7,12 @@ const CONFIG = {
 
 /* ── Utilities ──────────────────────────────────────────────────────────── */
 const formatPrice = (price, note) => {
-  const formatted = new Intl.NumberFormat('en-EU', {
-    style: 'currency', currency: CONFIG.currency,
-    maximumFractionDigits: 0
-  }).format(price);
+  const formatted = new Intl.NumberFormat('en-EU', { maximumFractionDigits: 0 }).format(price) + ' €';
   return note ? `${formatted} <span class="property-card__price-note">${note}</span>` : formatted;
 };
 
 const formatDetailPrice = (price, note) => {
-  const formatted = new Intl.NumberFormat('en-EU', {
-    style: 'currency', currency: CONFIG.currency,
-    maximumFractionDigits: 0
-  }).format(price);
+  const formatted = new Intl.NumberFormat('en-EU', { maximumFractionDigits: 0 }).format(price) + ' €';
   return note ? `${formatted}<span style="font-size:0.6em;color:var(--light-text);font-family:var(--font-sans);margin-left:8px">${note}</span>` : formatted;
 };
 
@@ -140,8 +134,8 @@ async function initPropertiesPage() {
   for (let p = 12500000; p <= 20000000; p += 2500000) pricePoints.push(p);
 
   const fmtPrice = v => v >= 1000000
-    ? `€${(v / 1000000).toLocaleString('en', { maximumFractionDigits: 2 })}m`
-    : `€${(v / 1000).toFixed(0)}k`;
+    ? `${(v / 1000000).toLocaleString('en', { maximumFractionDigits: 2 })}m €`
+    : `${(v / 1000).toFixed(0)}k €`;
 
   const minSel = document.getElementById('filter-price-min');
   const maxSel = document.getElementById('filter-price-max');
