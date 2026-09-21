@@ -155,9 +155,9 @@ def parse_property(prop):
         "description":  description,
         "features":     features,
         "costs": {
-            "ibi":       f"€{ibi:,}/year"       if ibi       else None,
-            "garbage":   f"€{garbage:,}/year"   if garbage   else None,
-            "community": f"€{community:,}/year" if community else None,
+            "ibi":       f"{ibi:,} €/year"       if ibi       else None,
+            "garbage":   f"{garbage:,} €/year"   if garbage   else None,
+            "community": f"{community:,} €/year" if community else None,
         },
         "featured":     False,
         "images":       images,
@@ -274,7 +274,21 @@ def main():
         "properties":   unique,
     }
 
+    # Safety check: never overwrite with fewer properties than we already have
     os.makedirs(os.path.dirname(os.path.abspath(OUTPUT_FILE)), exist_ok=True)
+    try:
+        with open(OUTPUT_FILE, 'r', encoding='utf-8') as f:
+            existing = json.load(f)
+        existing_count = existing.get('count', 0)
+    except Exception:
+        existing_count = 0
+
+    if len(unique) < existing_count:
+        print(f"\n⚠ Fetch returned only {len(unique)} properties (currently {existing_count} on file).")
+        print("  Keeping existing data to avoid overwriting with a partial/failed result.")
+        print(f"  Scanned {total_seen} total in feed\n")
+        return
+
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
