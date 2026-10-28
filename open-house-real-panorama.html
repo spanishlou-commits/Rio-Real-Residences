@@ -56,13 +56,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
     .hero__collage img:first-child { object-position: center center; }
     .hero__collage img:last-child  { object-position: center 40%; }
-    .hero__overlay {
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 80px;
-      background: linear-gradient(to bottom, rgba(14,14,14,0.35) 0%, transparent 100%);
-      pointer-events: none;
-    }
+    .hero__overlay { display: none; }
     .hero__logo {
       position: absolute;
       top: 28px;
@@ -84,14 +78,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: #fff;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.4);
     }
     .hero__label {
       position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 80px 40px 32px;
-      background: linear-gradient(to top, rgba(14,14,14,0.55) 0%, transparent 100%);
+      bottom: 32px;
+      left: 40px;
+      right: 40px;
     }
     .hero__eyebrow {
       font-family: var(--font-sans);
@@ -119,12 +112,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: #fff;
       line-height: 1.05;
       margin-bottom: 8px;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.5);
     }
     .hero__date {
       font-family: var(--font-sans);
       font-size: 0.85rem;
-      color: rgba(255,255,255,0.8);
+      color: rgba(255,255,255,0.9);
       letter-spacing: 0.06em;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.5);
     }
 
     /* Main layout */
