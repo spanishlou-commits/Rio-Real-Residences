@@ -40,21 +40,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     /* Hero */
     .hero {
       position: relative;
-      height: 75vh;
-      min-height: 480px;
-      overflow: hidden;
     }
-    .hero img {
+    .hero__collage {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      height: 70vh;
+      min-height: 460px;
+      gap: 3px;
+    }
+    .hero__collage img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center center;
       display: block;
     }
+    .hero__collage img:first-child { object-position: center center; }
+    .hero__collage img:last-child  { object-position: center 40%; }
     .hero__overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(to bottom, rgba(14,14,14,0.15) 0%, rgba(14,14,14,0.55) 100%);
+      background: linear-gradient(to bottom, rgba(14,14,14,0.5) 0%, transparent 35%, transparent 55%, rgba(14,14,14,0.6) 100%);
+      pointer-events: none;
     }
     .hero__logo {
       position: absolute;
@@ -80,25 +86,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
     .hero__label {
       position: absolute;
-      bottom: 36px;
-      left: 32px;
-      right: 32px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 48px 40px 40px;
+      background: linear-gradient(to top, rgba(14,14,14,0.75) 0%, transparent 100%);
     }
     .hero__eyebrow {
       font-family: var(--font-sans);
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 0.2em;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
       text-transform: uppercase;
       color: var(--teal);
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .hero__eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 28px;
+      height: 2px;
+      background: var(--teal);
     }
     .hero__title {
       font-family: var(--font-serif);
-      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-size: clamp(2.4rem, 5vw, 4rem);
       font-weight: 300;
       color: #fff;
-      line-height: 1.1;
+      line-height: 1.05;
+      margin-bottom: 8px;
+    }
+    .hero__date {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.8);
+      letter-spacing: 0.06em;
     }
 
     /* Main layout */
@@ -351,6 +376,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     /* Responsive */
     @media (max-width: 720px) {
+      .hero__collage { grid-template-columns: 1fr; height: 50vh; }
+      .hero__collage img:last-child { display: none; }
+      .hero__label { padding: 32px 20px 28px; }
+      .hero__logo { left: 20px; }
       .page {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -358,8 +387,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
       .form-card { position: static; }
       .facts-grid { grid-template-columns: repeat(2, 1fr); }
-      .hero__label { left: 20px; right: 20px; }
-      .hero__logo { left: 20px; }
       .form-row { grid-template-columns: 1fr; }
     }
   </style>
@@ -372,7 +399,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Hero -->
 <div class="hero">
-  <img src="images/properties/calle-almendro-144/parte_trasera_arquitectura_1700ppi.jpeg" alt="Real Panorama villa, Marbella">
+  <div class="hero__collage">
+    <img src="images/properties/calle-almendro-144/parte_trasera_arquitectura_1700ppi.jpeg" alt="Real Panorama villa — rear facade and garden">
+    <img src="images/properties/calle-almendro-144/piscina_terraza_vistas_arquitectura_1700ppi.jpeg" alt="Real Panorama — pool and tropical garden">
+  </div>
   <div class="hero__overlay"></div>
   <a href="/" class="hero__logo">
     <img src="images/logo-mark.png" alt="Rio Real Residences">
@@ -381,6 +411,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="hero__label">
     <p class="hero__eyebrow">Open House Invitation</p>
     <h1 class="hero__title">Real Panorama<br>Marbella</h1>
+    <p class="hero__date">Monday 3rd November · 11:00 – 14:00</p>
   </div>
 </div>
 
