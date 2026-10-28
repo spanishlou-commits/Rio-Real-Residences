@@ -40,6 +40,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     /* Hero */
     .hero {
       position: relative;
+      overflow: hidden;
     }
     .hero__collage {
       display: grid;
@@ -56,7 +57,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
     .hero__collage img:first-child { object-position: center center; }
     .hero__collage img:last-child  { object-position: center 40%; }
-    .hero__overlay { display: none; }
+    .hero__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(14,14,14,0.2) 0%, transparent 40%, rgba(14,14,14,0.4) 100%);
+      pointer-events: none;
+    }
     .hero__logo {
       position: absolute;
       top: 28px;
