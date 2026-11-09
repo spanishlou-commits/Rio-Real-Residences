@@ -76,4 +76,18 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- The Local Edit blog -->
+  <url>
+    <loc>https://riorealresidences.com/the-local-edit</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://riorealresidences.com/the-local-edit/marbella-east-property-prices-2026</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
