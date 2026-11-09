@@ -1,9 +1,353 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="refresh" content="0;url=https://riorealresidences.com/the-local-edit">
-<link rel="canonical" href="https://riorealresidences.com/the-local-edit">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K6G2NL5R');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Local Edit — property market insights, area guides and life in Marbella East, from Rio Real Residences.">
+  <title>The Local Edit — Rio Real Residences</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=10">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Rio Real Residences">
+  <meta property="og:title" content="The Local Edit — Rio Real Residences">
+  <meta property="og:description" content="Property market insights, area guides and life in Marbella East.">
+  <meta property="og:image" content="https://riorealresidences.com/images/blog/marbella-east-prices-2026/cover.jpg">
+  <link rel="canonical" href="https://riorealresidences.com/the-local-edit/">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <style>
+    .blog-hero {
+      padding: clamp(100px, 14vw, 160px) 0 clamp(48px, 6vw, 80px);
+      background: var(--off-white);
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+    .blog-hero__label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 16px;
+    }
+    .blog-hero__title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--dark);
+      margin-bottom: 20px;
+    }
+    .blog-hero__sub {
+      font-size: 1.05rem;
+      color: #555;
+      max-width: 560px;
+      line-height: 1.7;
+    }
+    .blog-categories {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 36px;
+    }
+    .blog-cat {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 7px 16px;
+      border-radius: 2px;
+      border: 1px solid rgba(0,0,0,0.15);
+      color: var(--dark);
+      text-decoration: none;
+      transition: all 0.2s;
+      background: transparent;
+      cursor: pointer;
+    }
+    .blog-cat:hover, .blog-cat.active {
+      background: var(--dark);
+      color: #fff;
+      border-color: var(--dark);
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px 32px;
+      margin-top: 56px;
+    }
+    @media (max-width: 900px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) { .blog-grid { grid-template-columns: 1fr; } }
+
+    .blog-card {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+    }
+    .blog-card__img {
+      width: 100%;
+      aspect-ratio: 16/10;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 20px;
+      transition: opacity 0.3s;
+    }
+    .blog-card:hover .blog-card__img { opacity: 0.88; }
+    .blog-card__cat {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 10px;
+    }
+    .blog-card__title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.45rem;
+      font-weight: 400;
+      line-height: 1.25;
+      color: var(--dark);
+      margin-bottom: 12px;
+    }
+    .blog-card:hover .blog-card__title { color: var(--teal); }
+    .blog-card__excerpt {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: #555;
+      flex: 1;
+      margin-bottom: 16px;
+    }
+    .blog-card__meta {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      color: #999;
+      letter-spacing: 0.04em;
+    }
+
+    /* Featured article (first card, full-width) */
+    .blog-card--featured {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 48px;
+      align-items: center;
+      padding-bottom: 48px;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      margin-bottom: 8px;
+    }
+    @media (max-width: 700px) {
+      .blog-card--featured {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+    .blog-card--featured .blog-card__img {
+      aspect-ratio: 4/3;
+      margin-bottom: 0;
+    }
+    .blog-card--featured .blog-card__title {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+    }
+    .blog-card--featured .blog-card__cat {
+      font-size: 0.65rem;
+      margin-bottom: 14px;
+    }
+    .blog-card--featured .blog-card__excerpt {
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
-<body></body>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6G2NL5R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Navigation -->
+<nav class="nav" id="main-nav">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__logo">
+      <img src="../images/logo-mark.png" alt="Rio Real Residences" class="nav__logo-img"><span class="nav__logo-text"><span class="nav__logo-main">Rio Real Residences</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="../properties.html" class="nav__link">Properties</a>
+      <div class="nav__dropdown">
+        <a href="../areas.html" class="nav__link">Area Guides</a>
+        <div class="nav__dropdown-menu">
+          <a href="../rio-real.html" class="nav__dropdown-item">Río Real</a>
+          <a href="../los-monteros.html" class="nav__dropdown-item">Los Monteros</a>
+          <a href="../lomas-de-pozuelo.html" class="nav__dropdown-item">Lomas de Pozuelo</a>
+          <a href="../bello-horizonte.html" class="nav__dropdown-item">Bello Horizonte</a>
+        </div>
+      </div>
+      <a href="./" class="nav__link active">The Local Edit</a>
+      <a href="../about.html" class="nav__link">About</a>
+      <a href="../contact.html" class="nav__link">Contact</a>
+      <a href="../vip-owners" class="nav__link">VIP Club</a>
+    </div>
+    <a href="../contact.html" class="nav__cta">Enquire Now</a>
+    <button class="nav__hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="nav__mobile">
+  <button class="nav__mobile-close" aria-label="Close menu">✕</button>
+  <a href="../properties.html" class="nav__link">Properties</a>
+  <a href="../areas.html" class="nav__link">Area Guides</a>
+  <div class="nav__mobile-sub">
+    <a href="../rio-real.html" class="nav__mobile-sub-link">→ Río Real</a>
+    <a href="../los-monteros.html" class="nav__mobile-sub-link">→ Los Monteros</a>
+    <a href="../lomas-de-pozuelo.html" class="nav__mobile-sub-link">→ Lomas de Pozuelo</a>
+    <a href="../bello-horizonte.html" class="nav__mobile-sub-link">→ Bello Horizonte</a>
+  </div>
+  <a href="the-local-edit.html" class="nav__link">The Local Edit</a>
+  <a href="../about.html" class="nav__link">About</a>
+  <a href="../contact.html" class="nav__link">Contact</a>
+  <a href="../vip-owners" class="nav__link">VIP Club</a>
+  <div class="contact-links">
+    <a href="#" data-wa="">WhatsApp us</a>
+    <a href="#" data-email="">louise@riorealresidences.com</a>
+  </div>
+</div>
+
+<!-- Hero -->
+<section class="blog-hero">
+  <div class="container">
+    <p class="blog-hero__label">Editorial · Rio Real Residences</p>
+    <h1 class="blog-hero__title">The Local Edit</h1>
+    <p class="blog-hero__sub">Property, places and life in Marbella East — from the people who know it best.</p>
+    <div class="blog-categories">
+      <span class="blog-cat active" data-cat="all">All</span>
+      <span class="blog-cat" data-cat="market-trends">Market Trends</span>
+      <span class="blog-cat" data-cat="area-guides">Area Guides</span>
+      <span class="blog-cat" data-cat="buying-in-spain">Buying in Spain</span>
+      <span class="blog-cat" data-cat="life-in-marbella">Life in Marbella</span>
+    </div>
+  </div>
+</section>
+
+<!-- Articles -->
+<section class="section">
+  <div class="container">
+    <div class="blog-grid" id="blog-grid">
+
+      <!-- Featured article -->
+      <a href="the-local-edit/marbella-east-property-prices-2026.html" class="blog-card blog-card--featured fade-up" data-cat="market-trends">
+        <img src="../images/blog/marbella-east-prices-2026/cover.jpg" alt="Lomas de Pozuelo, Marbella East" class="blog-card__img">
+        <div>
+          <p class="blog-card__cat">Market Trends</p>
+          <h2 class="blog-card__title">Marbella East Property Prices 2026: From Rio Real to Elviria</h2>
+          <p class="blog-card__excerpt">Marbella's asking prices have reached new highs, but completed sales and independent valuations tell a more complicated story. We examine the latest figures for Rio Real, Los Monteros, Elviria and the wider Marbella East property market.</p>
+          <span class="blog-card__meta">9 November 2026 · 10 min read</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="nav__logo" style="margin-bottom:16px">
+          <img src="../images/logo-mark.png" alt="Rio Real Residences" class="nav__logo-img"><span class="nav__logo-text"><span class="nav__logo-main">Rio Real Residences</span></span>
+        </div>
+        <p>Specialist real estate covering Rio Real, Lomas de Pozuelo, Bello Horizonte and Los Monteros.</p>
+        <div class="footer__contact-links">
+          <a href="#" class="footer__contact-link" data-wa="">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <a href="#" class="footer__contact-link" data-email="">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            louise@riorealresidences.com
+          </a>
+        </div>
+        <div class="footer__social">
+          <a href="https://instagram.com/riorealresidences" class="footer__social-link" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://tiktok.com/@riorealresidences" class="footer__social-link" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.22 8.22 0 0 0 4.79 1.52V6.75a4.85 4.85 0 0 1-1.02-.06z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@RioRealResidences" class="footer__social-link" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.55A3.02 3.02 0 0 0 .5 6.19C0 8.04 0 12 0 12s0 3.96.5 5.81a3.02 3.02 0 0 0 2.12 2.14C4.46 20.5 12 20.5 12 20.5s7.54 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14C24 15.96 24 12 24 12s0-3.96-.5-5.81zM9.75 15.5v-7l6.5 3.5-6.5 3.5z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h5>Properties</h5>
+        <ul class="footer__links">
+          <li><a href="../properties.html" class="footer__link">For Sale</a></li>
+          <li><a href="../properties.html" class="footer__link">For Rent</a></li>
+          <li><a href="../properties.html" class="footer__link">Villas</a></li>
+          <li><a href="../properties.html" class="footer__link">Apartments</a></li>
+          <li><a href="../properties.html" class="footer__link">Penthouses</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Agency</h5>
+        <ul class="footer__links">
+          <li><a href="../about.html" class="footer__link">About Us</a></li>
+          <li><a href="../about.html#team" class="footer__link">Louise &amp; Charlotte</a></li>
+          <li><a href="../vip-owners" class="footer__link">VIP Club</a></li>
+          <li><a href="the-local-edit.html" class="footer__link">The Local Edit</a></li>
+          <li><a href="../contact.html" class="footer__link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Area Guides</h5>
+        <ul class="footer__links">
+          <li><a href="../rio-real.html" class="footer__link">Río Real</a></li>
+          <li><a href="../los-monteros.html" class="footer__link">Los Monteros</a></li>
+          <li><a href="../lomas-de-pozuelo.html" class="footer__link">Lomas de Pozuelo</a></li>
+          <li><a href="../bello-horizonte.html" class="footer__link">Bello Horizonte</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">© 2025 Rio Real Residences S.L. · All rights reserved.</span>
+      <nav class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Legal Notice</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js?v=4"></script>
+<script>
+  // Category filter
+  document.querySelectorAll('.blog-cat').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.blog-cat').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cat = btn.dataset.cat;
+      document.querySelectorAll('.blog-card').forEach(card => {
+        if (cat === 'all' || card.dataset.cat === cat) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+</body>
 </html>
