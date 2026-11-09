@@ -1,0 +1,262 @@
+
+Resales Online → PRODUCTION fetch
+Target locations: altos de los monteros, bahia de marbella, bello horizonte, lomas de pozuelo, los monteros, rio real, torre real
+
+Fetching batch 1 (500 properties)…
+  Error fetching batch 1: The read operation timed out
+
+✓ Saved 0 properties → /Users/lou/rio-real-residences/scripts/../data/resales-properties.json
+  Scanned 0 total in feed
+
+Properties by location:
+
+
+Resales Online → PRODUCTION fetch
+Target locations: altos de los monteros, bahia de marbella, bello horizonte, lomas de pozuelo, los monteros, rio real, torre real
+
+Fetching batch 1 (500 properties)…
+  Error fetching batch 1: The read operation timed out
+
+✓ Saved 0 properties → /Users/lou/rio-real-residences/scripts/../data/resales-properties.json
+  Scanned 0 total in feed
+
+Properties by location:
+
+
+=== 2026-08-10 21:00:01 ===
+
+Resales Online → PRODUCTION fetch
+Target locations: altos de los monteros, bahia de marbella, bello horizonte, lomas de pozuelo, los monteros, rio real, torre real
+
+Fetching batch 1 (500 properties)…
+  500 properties, 9 matched (500 total scanned)
+Fetching batch 2 (500 properties)…
+  500 properties, 9 matched (1000 total scanned)
+Fetching batch 3 (500 properties)…
+  500 properties, 2 matched (1500 total scanned)
+Fetching batch 4 (500 properties)…
+  191 properties, 2 matched (1691 total scanned)
+  Last batch reached.
+  Removed 1 likely duplicate(s) (same property, multiple agents)
+
+✓ Saved 20 properties → /Users/lou/rio-real-residences/scripts/../data/resales-properties.json
+  Scanned 1691 total in feed
+
+Properties by location:
+  Altos de los Monteros: 6
+  Bahía de Marbella: 2
+  Los Monteros: 5
+  Río Real: 7
+
+Pushed to GitHub.
+
+Resales Online → PRODUCTION fetch
+Target locations: altos de los monteros, bahia de marbella, bello horizonte, lomas de pozuelo, los monteros, rio real, torre real
+
+Fetching batch 1 (500 properties)…
+  Error fetching batch 1: The read operation timed out
+
+✓ Saved 0 properties → /Users/lou/rio-real-residences/scripts/../data/resales-properties.json
+  Scanned 0 total in feed
+
+Properties by location:
+
+
+Resales Online → PRODUCTION fetch
+Target locations: altos de los monteros, bahia de marbella, bello horizonte, lomas de pozuelo, los monteros, rio real, torre real
+
+Fetching batch 1 (500 properties)…
+  Error fetching batch 1: The read operation timed out
+
+✓ Saved 0 properties → /Users/lou/rio-real-residences/scripts/../data/resales-properties.json
+  Scanned 0 total in feed
+
+Properties by location:
+
+
+Resales Online → PRODUCTION fetch
+Target locations: altos de los monteros, bahia de marbella, bello horizonte, lomas de pozuelo, los monteros, rio real, torre real
+
+Fetching batch 1 (500 properties)…
+  Error fetching batch 1: The read operation timed out
+
+✓ Saved 0 properties → /Users/lou/rio-real-residences/scripts/../data/resales-properties.json
+  Scanned 0 total in feed
+
+Properties by location:
+
+
+=== 2026-08-31 21:00:00 ===
+
+Resales Online → PRODUCTION fetch
+Target locations: altos de los monteros, bahia de marbella, bello horizonte, lomas de pozuelo, los monteros, rio real, torre real
+
+Fetching batch 1 (500 properties)…
+  500 properties, 5 matched (500 total scanned)
+Fetching batch 2 (500 properties)…
+  500 properties, 6 matched (1000 total scanned)
+Fetching batch 3 (500 properties)…
+  500 properties, 7 matched (1500 total scanned)
+Fetching batch 4 (500 properties)…
+  500 properties, 6 matched (2000 total scanned)
+Fetching batch 5 (500 properties)…
+  500 properties, 7 matched (2500 total scanned)
+Fetching batch 6 (500 properties)…
+  500 properties, 4 matched (3000 total scanned)
+Fetching batch 7 (500 properties)…
+  500 properties, 9 matched (3500 total scanned)
+Fetching batch 8 (500 properties)…
+  500 properties, 5 matched (4000 total scanned)
+Fetching batch 9 (500 properties)…
+  169 properties, 1 matched (4169 total scanned)
+  Last batch reached.
+  Removed 1 likely duplicate(s) (same property, multiple agents)
+
+✓ Saved 49 properties → /Users/lou/rio-real-residences/scripts/../data/resales-properties.json
+  Scanned 4169 total in feed
+
+Properties by location:
+  Altos de los Monteros: 25
+  Bahía de Marbella: 8
+  Los Monteros: 5
+  Río Real: 11
+
+Pushed to GitHub.
+
+Resales Online → PRODUCTION fetch
+Target locations: altos de los monteros, bahia de marbella, bello horizonte, lomas de pozuelo, los monteros, rio real, torre real
+
+Fetching batch 1 (500 properties)…
+  Error fetching batch 1: The read operation timed out
+
+✓ Saved 0 properties → /Users/lou/rio-real-residences/scripts/../data/resales-properties.json
+  Scanned 0 total in feed
+
+Properties by location:
+
+
+=== 2026-09-07 21:00:00 ===
+
+Resales Online → PRODUCTION fetch
+Target locations: altos de los monteros, bahia de marbella, bello horizonte, lomas de pozuelo, los monteros, rio real, torre real
+
+Fetching batch 1 (500 properties)…
+  500 properties, 4 matched (500 total scanned)
+Fetching batch 2 (500 properties)…
+  500 properties, 1 matched (1000 total scanned)
+Fetching batch 3 (500 properties)…
+  500 properties, 6 matched (1500 total scanned)
+Fetching batch 4 (500 properties)…
+  Error fetching batch 4: The read operation timed out
+
+✓ Saved 11 properties → /Users/lou/rio-real-residences/scripts/../data/resales-properties.json
+  Scanned 1500 total in feed
+
+Properties by location:
+  Altos de los Monteros: 3
+  Bahía de Marbella: 2
+  Los Monteros: 5
+  Río Real: 1
+
+Pushed to GitHub.
+
+Resales Online → PRODUCTION fetch
+Target locations: altos de los monteros, bahia de marbella, bello horizonte, lomas de pozuelo, los monteros, rio real, torre real
+
+Fetching batch 1 (500 properties)…
+  Error fetching batch 1: The read operation timed out
+
+✓ Saved 0 properties → /Users/lou/rio-real-residences/scripts/../data/resales-properties.json
+  Scanned 0 total in feed
+
+Properties by location:
+
+
+Resales Online → PRODUCTION fetch
+Target locations: altos de los monteros, bahia de marbella, bello horizonte, lomas de pozuelo, los monteros, rio real, torre real
+
+Fetching batch 1 (500 properties)…
+  Error fetching batch 1: The read operation timed out
+
+✓ Saved 0 properties → /Users/lou/rio-real-residences/scripts/../data/resales-properties.json
+  Scanned 0 total in feed
+
+Properties by location:
+
+
+Resales Online → PRODUCTION fetch
+Target locations: altos de los monteros, bahia de marbella, bello horizonte, lomas de pozuelo, los monteros, rio real, torre real
+
+Fetching batch 1 (500 properties)…
+  Error fetching batch 1: The read operation timed out
+
+⚠ Fetch returned only 0 properties (currently 49 on file).
+  Keeping existing data to avoid overwriting with a partial/failed result.
+  Scanned 0 total in feed
+
+
+Resales Online → PRODUCTION fetch
+Target locations: altos de los monteros, bahia de marbella, bello horizonte, lomas de pozuelo, los monteros, rio real, torre real
+
+Fetching batch 1 (500 properties)…
+  Error fetching batch 1: The read operation timed out
+
+⚠ Fetch returned only 0 properties (currently 49 on file).
+  Keeping existing data to avoid overwriting with a partial/failed result.
+  Scanned 0 total in feed
+
+
+Resales Online → PRODUCTION fetch
+Target locations: altos de los monteros, bahia de marbella, bello horizonte, lomas de pozuelo, los monteros, rio real, torre real
+
+Fetching batch 1 (500 properties)…
+  Error fetching batch 1: The read operation timed out
+
+⚠ Fetch returned only 0 properties (currently 49 on file).
+  Keeping existing data to avoid overwriting with a partial/failed result.
+  Scanned 0 total in feed
+
+
+Resales Online → PRODUCTION fetch
+Target locations: altos de los monteros, bahia de marbella, bello horizonte, lomas de pozuelo, los monteros, rio real, torre real
+
+Fetching batch 1 (500 properties)…
+  Error fetching batch 1: The read operation timed out
+
+⚠ Fetch returned only 0 properties (currently 49 on file).
+  Keeping existing data to avoid overwriting with a partial/failed result.
+  Scanned 0 total in feed
+
+
+Resales Online → PRODUCTION fetch
+Target locations: altos de los monteros, bahia de marbella, bello horizonte, lomas de pozuelo, los monteros, rio real, torre real
+
+Fetching batch 1 (500 properties)…
+  Error fetching batch 1: The read operation timed out
+
+⚠ Fetch returned only 0 properties (currently 49 on file).
+  Keeping existing data to avoid overwriting with a partial/failed result.
+  Scanned 0 total in feed
+
+
+Resales Online → PRODUCTION fetch
+Target locations: altos de los monteros, bahia de marbella, bello horizonte, lomas de pozuelo, los monteros, rio real, torre real
+
+Fetching batch 1 (500 properties)…
+  Error fetching batch 1: The read operation timed out
+
+⚠ Fetch returned only 0 properties (currently 49 on file).
+  Keeping existing data to avoid overwriting with a partial/failed result.
+  Scanned 0 total in feed
+
+
+Resales Online → PRODUCTION fetch
+Target locations: altos de los monteros, bahia de marbella, bello horizonte, lomas de pozuelo, los monteros, rio real, torre real
+
+Fetching batch 1 (500 properties)…
+  Error fetching batch 1: The read operation timed out
+
+⚠ Fetch returned only 0 properties (currently 49 on file).
+  Keeping existing data to avoid overwriting with a partial/failed result.
+  Scanned 0 total in feed
+

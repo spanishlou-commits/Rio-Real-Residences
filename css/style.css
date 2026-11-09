@@ -235,6 +235,30 @@ p { font-size: 1rem; color: var(--mid); line-height: 1.75; }
 
 .nav--light .nav__link:hover { color: var(--white); }
 
+/* Language switcher */
+.nav__lang {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-right: 16px;
+}
+.nav__lang a {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 7px;
+  border-radius: 2px;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.55;
+  transition: opacity 0.2s;
+}
+.nav__lang a:hover { opacity: 1; }
+.nav__lang a.active { opacity: 1; border-bottom: 1.5px solid currentColor; }
+.nav--light .nav__lang a { color: var(--white); }
+.nav.scrolled .nav__lang a { color: var(--dark); }
+
 .nav__cta {
   display: inline-flex;
   align-items: center;
