@@ -164,7 +164,10 @@ async function initPropertiesPage() {
 
   // ── Match a property against active filters ────────────────────────────────
   const matches = (p, f) => {
-    if (f.area && norm(p.neighbourhood || '') !== norm(f.area)) return false;
+    if (f.area) {
+      const allAreas = [p.neighbourhood || '', ...(p.neighbourhoodAliases || [])];
+      if (!allAreas.some(a => norm(a) === norm(f.area))) return false;
+    }
     if (f.type && !p.type.toLowerCase().includes(f.type.toLowerCase())) return false;
     if (f.priceMin && p.price < f.priceMin) return false;
     if (f.priceMax < Infinity && p.price > f.priceMax) return false;
