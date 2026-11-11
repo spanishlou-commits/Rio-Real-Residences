@@ -229,6 +229,21 @@ async function initPropertiesPage() {
     render();
   });
 
+  // ── Pre-select from URL params (?type=Villa, ?area=Rio+Real) ─────────────
+  const paramType = getParam('type');
+  const paramArea = getParam('area');
+  if (paramType) {
+    const btn = document.querySelector(`.type-btn[data-type="${paramType}"]`);
+    if (btn) {
+      document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+  }
+  if (paramArea) {
+    const sel = document.getElementById('filter-area');
+    if (sel) sel.value = paramArea;
+  }
+
   render();
 }
 
