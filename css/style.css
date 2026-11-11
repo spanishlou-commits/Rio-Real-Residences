@@ -567,7 +567,8 @@ p { font-size: 1rem; color: var(--mid); line-height: 1.75; }
 .properties-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 2px;
+  column-gap: 2px;
+  row-gap: 32px;
 }
 
 .property-card {
@@ -611,6 +612,7 @@ p { font-size: 1rem; color: var(--mid); line-height: 1.75; }
 }
 
 .property-card__badge--rent { background: var(--teal); color: var(--white); }
+.property-card__badge--exclusive { background: var(--dark); color: var(--white); }
 
 .property-card__network {
   position: absolute;
@@ -935,7 +937,7 @@ p { font-size: 1rem; color: var(--mid); line-height: 1.75; }
 
 .page-hero .label { color: var(--teal); margin-bottom: 16px; }
 
-.page-hero h1 { color: var(--dark); }
+.page-hero h1 { color: var(--dark); font-size: clamp(1.9rem, 3.5vw, 3rem); }
 
 /* ── Search & Filter Panel ────────────────────────────────────────────────── */
 .search-panel {

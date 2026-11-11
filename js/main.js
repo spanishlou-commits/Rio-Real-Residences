@@ -265,7 +265,7 @@ function propertyCardHTML(p) {
     <a href="${p.url ? p.url : 'property.html?id=' + p.id}" class="property-card" data-id="${p.id}">
       <div class="property-card__image">
         <img src="${p.thumbnail}" alt="${p.title}" loading="lazy">
-        <span class="property-card__badge${p.status === 'For Rent' ? ' property-card__badge--rent' : ''}">${p.status}</span>
+        <span class="property-card__badge${p.status === 'For Rent' ? ' property-card__badge--rent' : p.status === 'Exclusive' ? ' property-card__badge--exclusive' : ''}">${p.status}</span>
         ${p.source === 'resales' ? '<span class="property-card__network">Network</span>' : ''}
       </div>
       <div class="property-card__body">
@@ -315,7 +315,7 @@ async function initHomePage() {
     <a href="${p.url ? p.url : 'property.html?id=' + p.id}" class="property-card" data-id="${p.id}">
       <div class="property-card__image">
         <img src="${p.thumbnail}" alt="${p.title}" loading="lazy">
-        <span class="property-card__badge${p.status === 'For Rent' ? ' property-card__badge--rent' : ''}">${p.status}</span>
+        <span class="property-card__badge${p.status === 'For Rent' ? ' property-card__badge--rent' : p.status === 'Exclusive' ? ' property-card__badge--exclusive' : ''}">${p.status}</span>
         ${p.source === 'resales' ? '<span class="property-card__network">Network</span>' : ''}
       </div>
       <div class="property-card__body">
