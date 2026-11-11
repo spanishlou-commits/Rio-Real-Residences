@@ -256,7 +256,10 @@ async function fetchProperties() {
   const local   = localResult.status   === 'fulfilled' ? localResult.value   : [];
   const resales = resalesResult.status === 'fulfilled' ? resalesResult.value : [];
 
-  return [...local, ...resales];
+  const localTitles = new Set(local.map(p => p.title.trim().toLowerCase()));
+  const dedupedResales = resales.filter(p => !localTitles.has(p.title.trim().toLowerCase()));
+
+  return [...local, ...dedupedResales];
 }
 
 function propertyCardHTML(p) {
