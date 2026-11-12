@@ -249,8 +249,8 @@ async function initPropertiesPage() {
 
 async function fetchProperties() {
   const [localResult, resalesResult] = await Promise.allSettled([
-    fetch('data/properties.json').then(r => r.json()),
-    fetch('data/resales-properties.json').then(r => r.json()).then(d => d.properties || [])
+    fetch('data/properties.json?v=' + Date.now()).then(r => r.json()),
+    fetch('data/resales-properties.json?v=' + Date.now()).then(r => r.json()).then(d => d.properties || [])
   ]);
 
   const local   = localResult.status   === 'fulfilled' ? localResult.value   : [];
