@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K6G2NL5R');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="South-facing penthouse for sale in Río Real, Marbella — 2 bedrooms, 2 bathrooms, 117 m² interior, exceptional 116 m² rooftop solarium with panoramic sea and golf views. Rio Real Residences.">
+  <title>South-Facing Penthouse with Sea and Golf Views in Rio Real — Rio Real Residences</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=11">
+  <style>
+
+    /* ── Property header ──────────────────────────────────────────────────── */
+    .prop-header {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      padding: 24px var(--gutter) 0;
+    }
+    .prop-header__meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 16px;
+    }
+    .prop-header__title { flex: 1 1 auto; }
+    .prop-header__title h1 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.1;
+    }
+    .prop-header__location {
+      font-size: 0.9rem;
+      color: var(--light-text);
+      margin-top: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .prop-header__price {
+      text-align: right;
+      flex-shrink: 0;
+    }
+    .prop-header__price-tag {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      color: var(--dark);
+      line-height: 1;
+    }
+    .prop-header__price-label {
+      font-size: 0.7rem;
+      color: var(--light-text);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    /* ── Quick specs strip ────────────────────────────────────────────────── */
+    .prop-specs {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      padding: 28px var(--gutter);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin-top: 28px;
+    }
+    .prop-spec {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      padding: 8px 24px;
+      border-right: 1px solid var(--border);
+      flex: 1 1 auto;
+    }
+    .prop-spec:last-child { border-right: none; }
+    .prop-spec__value {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: var(--dark);
+      line-height: 1;
+    }
+    .prop-spec__label {
+      font-size: 0.68rem;
+      color: var(--light-text);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      white-space: nowrap;
+    }
+    .prop-spec svg { color: var(--teal); }
+
+    /* ── Gallery ──────────────────────────────────────────────────────────── */
+    .prop-gallery {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      padding: calc(72px + 16px) var(--gutter) 0;
+    }
+    .prop-gallery__grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 340px 220px;
+      gap: 6px;
+    }
+    .prop-gallery__main { grid-row: 1 / 3; }
+    .prop-gallery__main img,
+    .prop-gallery__thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .prop-gallery__main img:hover,
+    .prop-gallery__thumb img:hover { opacity: 0.92; }
+    .prop-gallery__thumb { position: relative; overflow: hidden; }
+    .prop-gallery__thumb--extra { display: none; }
+    .prop-gallery__more {
+      position: absolute;
+      inset: 0;
+      background: rgba(14,14,14,0.52);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .prop-gallery__more:hover { background: rgba(14,14,14,0.4); }
+    .prop-gallery__more span:first-child { font-family: var(--font-serif); font-size: 2rem; }
+    .prop-gallery__more span:last-child { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.8; }
+
+    /* ── Content layout ───────────────────────────────────────────────────── */
+    .prop-body {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      padding: 60px var(--gutter);
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 60px;
+      align-items: start;
+    }
+
+    /* ── Description sections ─────────────────────────────────────────────── */
+    .prop-sections { display: flex; flex-direction: column; gap: 48px; }
+    .prop-section__heading {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--dark);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .prop-section p { margin-bottom: 16px; line-height: 1.8; }
+    .prop-section p:last-child { margin-bottom: 0; }
+
+    /* ── At a glance list ─────────────────────────────────────────────────── */
+    .at-a-glance {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 24px;
+    }
+    .at-a-glance__item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      color: var(--mid);
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .at-a-glance__item svg { color: var(--teal); flex-shrink: 0; }
+
+    /* ── Sidebar ──────────────────────────────────────────────────────────── */
+    .prop-sidebar { position: sticky; top: 96px; display: flex; flex-direction: column; gap: 24px; }
+    .sidebar-card {
+      background: var(--off-white);
+      border: 1px solid var(--border);
+      padding: 28px;
+    }
+    .sidebar-card h4 { font-family: var(--font-serif); font-size: 1.2rem; font-weight: 400; margin-bottom: 8px; }
+    .sidebar-card p { font-size: 0.88rem; color: var(--mid); margin-bottom: 20px; line-height: 1.6; }
+    .sidebar-card .btn { width: 100%; text-align: center; display: block; padding: 14px 20px; margin-bottom: 10px; }
+    .sidebar-card .btn:last-child { margin-bottom: 0; }
+    .btn--primary {
+      background: var(--teal); color: #fff;
+      font-size: 0.82rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+      border: 1px solid var(--teal); transition: background 0.2s, border-color 0.2s;
+    }
+    .btn--primary:hover { background: var(--teal-light); border-color: var(--teal-light); }
+    .btn--outline-dark {
+      background: transparent; color: var(--dark);
+      font-size: 0.82rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+      border: 1px solid var(--dark); transition: background 0.2s, color 0.2s;
+    }
+    .btn--outline-dark:hover { background: var(--dark); color: #fff; }
+
+    /* ── Why we love this section ─────────────────────────────────────────── */
+    .love-section {
+      background: var(--cream);
+      padding: clamp(60px, 8vw, 100px) var(--gutter);
+    }
+    .love-section__inner {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .love-section__label { margin-bottom: 16px; }
+    .love-section__text h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); margin-bottom: 28px; }
+    .love-section__text p { margin-bottom: 18px; font-size: 1.05rem; line-height: 1.85; }
+    .love-section__text p:last-child { margin-bottom: 0; }
+    .love-section__author {
+      display: flex; align-items: center; gap: 16px;
+      margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--border);
+    }
+    .love-section__author img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; }
+    .love-section__author-name { font-family: var(--font-serif); font-size: 1.05rem; color: var(--dark); }
+    .love-section__author-title { font-size: 0.78rem; color: var(--light-text); letter-spacing: 0.06em; }
+    .love-section__image { border-radius: 0; overflow: hidden; }
+    .love-section__image img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+
+    /* ── Lightbox ─────────────────────────────────────────────────────────── */
+    .prop-lightbox {
+      display: none; position: fixed; inset: 0;
+      background: rgba(14,14,14,0.95); z-index: 1000;
+      align-items: center; justify-content: center;
+    }
+    .prop-lightbox.open { display: flex; }
+    .prop-lightbox__img { max-width: 90vw; max-height: 90vh; object-fit: contain; }
+    .prop-lightbox__btn {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      background: none; border: none; color: #fff; font-size: 2rem;
+      cursor: pointer; padding: 20px; opacity: 0.7; transition: opacity 0.2s;
+    }
+    .prop-lightbox__btn:hover { opacity: 1; }
+    .prop-lightbox__prev { left: 16px; }
+    .prop-lightbox__next { right: 16px; }
+    .prop-lightbox__close {
+      position: absolute; top: 20px; right: 24px;
+      background: none; border: none; color: #fff; font-size: 1.4rem;
+      cursor: pointer; opacity: 0.7; transition: opacity 0.2s;
+    }
+    .prop-lightbox__close:hover { opacity: 1; }
+    .prop-lightbox__counter {
+      position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%);
+      color: rgba(255,255,255,0.6); font-size: 0.8rem; letter-spacing: 0.1em;
+    }
+
+    @media (max-width: 1024px) {
+      .prop-body { grid-template-columns: 1fr; }
+      .prop-sidebar { position: static; }
+      .love-section__inner { grid-template-columns: 1fr; }
+      .love-section__image { order: -1; }
+      .love-section__image img { aspect-ratio: 16/9; }
+    }
+    @media (max-width: 700px) {
+      .prop-gallery__grid {
+        display: flex; flex-direction: row;
+        overflow-x: auto; overflow-y: hidden;
+        gap: 4px; height: 260px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        grid-template-columns: unset; grid-template-rows: unset;
+      }
+      .prop-gallery__main, .prop-gallery__thumb {
+        flex: 0 0 85vw; max-width: 85vw; height: 260px;
+        scroll-snap-align: start; display: block;
+      }
+      .prop-gallery__more { display: none; }
+      .prop-gallery__thumb--extra { display: block; }
+      .prop-header__meta { flex-direction: column; gap: 8px; }
+      .prop-header__price { text-align: left; }
+      .prop-specs { gap: 12px; }
+      .prop-spec { padding: 8px 12px; border-right: none; border-bottom: 1px solid var(--border); flex: 1 1 40%; }
+      .at-a-glance { grid-template-columns: 1fr; }
+    }
+  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Rio Real Residences">
+  <meta property="og:image" content="https://riorealresidences.com/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://riorealresidences.com/images/og-image.jpg">
+  <link rel="canonical" href="https://riorealresidences.com/monte-salma">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6G2NL5R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Navigation -->
+<nav class="nav" id="main-nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <img src="images/logo-mark.png" alt="Rio Real Residences" class="nav__logo-img"><span class="nav__logo-text"><span class="nav__logo-main">Rio Real Residences</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="properties.html" class="nav__link active">Properties</a>
+      <div class="nav__dropdown">
+        <a href="areas.html" class="nav__link">Area Guides</a>
+        <div class="nav__dropdown-menu">
+          <a href="rio-real.html" class="nav__dropdown-item">Río Real</a>
+          <a href="los-monteros.html" class="nav__dropdown-item">Los Monteros</a>
+          <a href="lomas-de-pozuelo.html" class="nav__dropdown-item">Lomas de Pozuelo</a>
+          <a href="bello-horizonte.html" class="nav__dropdown-item">Bello Horizonte</a>
+          <a href="the-local-edit/" class="nav__dropdown-item">The Local Edit</a>
+        </div>
+      </div>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+      <a href="vip-owners" class="nav__link">VIP Owner's Club</a>
+    </div>
+    <a href="contact.html" class="nav__cta">Enquire Now</a>
+    <button class="nav__hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="nav__mobile">
+  <button class="nav__mobile-close" aria-label="Close menu">✕</button>
+  <a href="properties.html" class="nav__link">Properties</a>
+  <a href="areas.html" class="nav__link">Area Guides</a>
+  <div class="nav__mobile-sub">
+    <a href="rio-real.html" class="nav__mobile-sub-link">→ Río Real</a>
+    <a href="los-monteros.html" class="nav__mobile-sub-link">→ Los Monteros</a>
+    <a href="lomas-de-pozuelo.html" class="nav__mobile-sub-link">→ Lomas de Pozuelo</a>
+    <a href="bello-horizonte.html" class="nav__mobile-sub-link">→ Bello Horizonte</a>
+    <a href="the-local-edit/" class="nav__mobile-sub-link">→ The Local Edit</a>
+  </div>
+  <a href="about.html" class="nav__link">About</a>
+  <a href="contact.html" class="nav__link">Contact</a>
+  <a href="vip-owners" class="nav__link">VIP Owner's Club</a>
+  <div class="contact-links">
+    <a href="#" data-wa="">WhatsApp us</a>
+    <a href="#" data-email="">louise@riorealresidences.com</a>
+  </div>
+</div>
+
+<!-- Gallery -->
+<div class="prop-gallery">
+  <div class="prop-gallery__grid">
+    <div class="prop-gallery__main">
+      <img src="images/properties/monte-salma/monte-salma-golf-apartment-with-views.jpg" alt="South-facing penthouse with sea and golf views, Río Real" data-index="0" onclick="openLightbox(0)">
+    </div>
+    <div class="prop-gallery__thumb">
+      <img src="images/properties/monte-salma/monte-salma-golf-property-roof-terrace.jpg" alt="116 m² rooftop solarium" data-index="1" onclick="openLightbox(1)">
+    </div>
+    <div class="prop-gallery__thumb">
+      <img src="images/properties/monte-salma/monte-salma-rio-real-golf-apartment-terrace.jpg" alt="Outdoor terrace with golf views" data-index="2" onclick="openLightbox(2)">
+      <div class="prop-gallery__more" onclick="openLightbox(3)">
+        <span>+15</span>
+        <span>View all photos</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Breadcrumb -->
+<div class="prop-header" style="padding-bottom: 0;">
+  <nav style="font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--light-text); display:flex; gap:8px; align-items:center;">
+    <a href="index.html" style="color:var(--light-text); transition:color 0.2s" onmouseover="this.style.color='var(--dark)'" onmouseout="this.style.color='var(--light-text)'">Home</a>
+    <span>·</span>
+    <a href="properties.html" style="color:var(--light-text); transition:color 0.2s" onmouseover="this.style.color='var(--dark)'" onmouseout="this.style.color='var(--light-text)'">Properties</a>
+    <span>·</span>
+    <span style="color:var(--dark)">Monte Salma Penthouse</span>
+  </nav>
+</div>
+
+<!-- Property Header -->
+<div class="prop-header">
+  <div class="prop-header__meta">
+    <div class="prop-header__title">
+      <h1>South-Facing Penthouse with Sea and Golf Views in Rio Real</h1>
+      <div class="prop-header__location">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Río Real, Marbella East
+      </div>
+    </div>
+    <div class="prop-header__price">
+      <div class="prop-header__price-tag">595,000 €</div>
+      <div class="prop-header__price-label">For Sale</div>
+    </div>
+  </div>
+</div>
+
+<!-- Specs Strip -->
+<div class="prop-specs">
+  <div class="prop-spec">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    <span class="prop-spec__value">2</span>
+    <span class="prop-spec__label">Bedrooms</span>
+  </div>
+  <div class="prop-spec">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M4 12a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2M4 12v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6"/></svg>
+    <span class="prop-spec__value">2</span>
+    <span class="prop-spec__label">Bathrooms</span>
+  </div>
+  <div class="prop-spec">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+    <span class="prop-spec__value">117 m²</span>
+    <span class="prop-spec__label">Interior</span>
+  </div>
+  <div class="prop-spec">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+    <span class="prop-spec__value">116 m²</span>
+    <span class="prop-spec__label">Solarium</span>
+  </div>
+  <div class="prop-spec">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+    <span class="prop-spec__value">Sea +<br>Golf</span>
+    <span class="prop-spec__label">Views</span>
+  </div>
+</div>
+
+<!-- Body -->
+<div class="prop-body">
+  <div class="prop-sections">
+
+    <!-- At a Glance -->
+    <div class="prop-section">
+      <h2 class="prop-section__heading">At a Glance</h2>
+      <div class="at-a-glance">
+        <div class="at-a-glance__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          2 bedrooms, 2 bathrooms
+        </div>
+        <div class="at-a-glance__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          117 m² interior, 116 m² rooftop solarium
+        </div>
+        <div class="at-a-glance__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          South-facing orientation
+        </div>
+        <div class="at-a-glance__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Open views across Río Real Golf and the Mediterranean
+        </div>
+        <div class="at-a-glance__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          ~40 m² living room with marble flooring
+        </div>
+        <div class="at-a-glance__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Independent, fully equipped kitchen
+        </div>
+        <div class="at-a-glance__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Air conditioning, heating, built-in wardrobes
+        </div>
+        <div class="at-a-glance__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Communal gardens and swimming pool
+        </div>
+        <div class="at-a-glance__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Lift access, parking space, storage room
+        </div>
+        <div class="at-a-glance__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          5 minutes from Marbella centre
+        </div>
+      </div>
+    </div>
+
+    <!-- The Living Room -->
+    <div class="prop-section">
+      <h2 class="prop-section__heading">The Living Room</h2>
+      <p>The first thing you notice as you walk in the door to this fifth floor golf penthouse is the luminosity throughout.</p>
+      <p>South-facing and generously proportioned, the living room offers approximately 40 m² of space, with marble flooring and an open outlook towards the golf course and Mediterranean beyond.</p>
+      <p>There's plenty of room for comfortable seating and a proper dining area, without compromising the sense of space.</p>
+      <p>The apartment has been well maintained over the years, with improvements to the bathrooms, appliances and air conditioning system. It is a home you could comfortably enjoy as it stands, although the generous proportions and straightforward layout also offer considerable scope for someone looking to introduce a more contemporary interior.</p>
+    </div>
+
+    <!-- Cooking and Dining -->
+    <div class="prop-section">
+      <h2 class="prop-section__heading">Cooking and Dining</h2>
+      <p>The independent kitchen is fully furnished and equipped, with a practical layout that keeps cooking separate from the main living space.</p>
+      <p>For those who prefer an open-plan arrangement, the existing layout may offer possibilities for reconfiguration, subject to the necessary technical assessment.</p>
+      <p>But dining at this penthouse isn't limited to the interior. The outdoor terrace provides a wonderful setting for meals overlooking the golf course, while the rooftop solarium offers an entirely different experience with its own glass living room for cooler months.</p>
+    </div>
+
+    <!-- Bedrooms -->
+    <div class="prop-section">
+      <h2 class="prop-section__heading">Bedrooms</h2>
+      <p>The penthouse has two generously sized bedrooms, both arranged on the same floor as the main living accommodation.</p>
+      <p>Built-in wardrobes provide practical storage, while the south-facing orientation and elevated position contribute to the apartment's bright, open character.</p>
+      <p>With two bedrooms rather than three, the property is particularly well suited to a couple, a smaller family or anyone looking for a Marbella home with space to accommodate visiting friends.</p>
+    </div>
+
+    <!-- Bathrooms -->
+    <div class="prop-section">
+      <h2 class="prop-section__heading">Bathrooms</h2>
+      <p>Two bathrooms serve the apartment, both of which have benefited from updates over the years.</p>
+      <p>The property is well maintained and offers the opportunity for further personalisation without the immediate need for a complete renovation.</p>
+    </div>
+
+    <!-- The Rooftop Solarium -->
+    <div class="prop-section">
+      <h2 class="prop-section__heading">The Rooftop Solarium</h2>
+      <p>This is undoubtedly one of the features that makes the penthouse stand out.</p>
+      <p>At approximately 116 m², the rooftop solarium is almost as large as the apartment itself. Accessed directly from the property's private terrace, it enjoys open views across Rio Real Golf towards the Mediterranean, with the mountains forming a backdrop to the surrounding landscape.</p>
+      <p>Part of the solarium has been transformed into a comfortable lounge area beneath a wooden-beamed structure, with double-insulated PVC glazing and awnings providing protection from the sun. It's a space designed to be enjoyed throughout the year, whether you're entertaining friends, reading in the afternoon or simply taking in the views.</p>
+      <p>There is also an outdoor dining area, making the rooftop a natural extension of the living accommodation.</p>
+      <p><em>An important detail: The solarium is community-owned but designated for the exclusive use of this penthouse. Buyers should review the relevant community documentation to confirm the precise terms of use.</em></p>
+    </div>
+
+    <!-- The Community -->
+    <div class="prop-section">
+      <h2 class="prop-section__heading">The Community</h2>
+      <p>The penthouse is situated within an established residential development dating from 1993, surrounded by mature communal gardens.</p>
+      <p>Residents enjoy access to a shared swimming pool, while the building benefits from lift access and the convenience of an included parking space. The community is well maintained and offers a peaceful residential setting, suitable for permanent living or longer stays in Marbella.</p>
+    </div>
+
+    <!-- Living in Rio Real -->
+    <div class="prop-section">
+      <h2 class="prop-section__heading">Living in Río Real</h2>
+      <p>One of the pleasures of Río Real is how close you are to Marbella without feeling surrounded by the town.</p>
+      <p>The penthouse overlooks Río Real Golf — one of the Costa del Sol's most established and iconic golf courses, with its clubhouse, hotel and restaurant within walking distance.</p>
+      <p>The beach is approximately three minutes away by car or around 20 minutes on foot, where you'll find Trocadero Arena — a favourite for beachfront dining in Río Real. From here, the Senda Litoral coastal walkway offers a beautiful route along the Mediterranean towards Marbella.</p>
+      <p>Marbella town centre and La Cañada shopping centre are around five minutes away by car, making everyday errands, shopping and dining exceptionally convenient. It's this combination of a peaceful residential setting and proximity to everything that makes Río Real such an appealing place to live.</p>
+    </div>
+
+  </div>
+
+  <!-- Sidebar -->
+  <div class="prop-sidebar">
+    <div class="sidebar-card">
+      <h4>Arrange a Viewing</h4>
+      <p>Our team can organise a private visit at your convenience.</p>
+      <a href="#" class="btn btn--primary" data-wa="Hello, I'd like to arrange a viewing for the South-Facing Penthouse in Monte Salma, Río Real.">WhatsApp Us</a>
+      <a href="contact.html" class="btn btn--outline-dark">Request a Viewing</a>
+    </div>
+
+    <div class="sidebar-card">
+      <h4 style="margin-bottom:16px;">Key Facts</h4>
+      <div style="display:flex; flex-direction:column; gap:0;">
+        <div style="display:flex; justify-content:space-between; padding-bottom:10px; border-bottom:1px solid var(--border); font-size:0.88rem;">
+          <span style="color:var(--light-text);">Type</span>
+          <span style="color:var(--dark); font-weight:500;">Penthouse</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; padding-bottom:10px; border-bottom:1px solid var(--border); font-size:0.88rem; margin-top:10px;">
+          <span style="color:var(--light-text);">Area</span>
+          <span style="color:var(--dark); font-weight:500;">Río Real</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; padding-bottom:10px; border-bottom:1px solid var(--border); font-size:0.88rem; margin-top:10px;">
+          <span style="color:var(--light-text);">Interior</span>
+          <span style="color:var(--dark); font-weight:500;">117 m²</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; padding-bottom:10px; border-bottom:1px solid var(--border); font-size:0.88rem; margin-top:10px;">
+          <span style="color:var(--light-text);">Solarium</span>
+          <span style="color:var(--dark); font-weight:500;">116 m²</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; padding-bottom:10px; border-bottom:1px solid var(--border); font-size:0.88rem; margin-top:10px;">
+          <span style="color:var(--light-text);">Bedrooms</span>
+          <span style="color:var(--dark); font-weight:500;">2</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; padding-bottom:10px; border-bottom:1px solid var(--border); font-size:0.88rem; margin-top:10px;">
+          <span style="color:var(--light-text);">Bathrooms</span>
+          <span style="color:var(--dark); font-weight:500;">2</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; font-size:0.88rem; margin-top:10px;">
+          <span style="color:var(--light-text);">Ref</span>
+          <span style="color:var(--dark); font-weight:500;">R5529397</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Why We Love This Penthouse -->
+<div class="love-section">
+  <div class="love-section__inner">
+    <div class="love-section__text">
+      <p class="label love-section__label">A Personal Note</p>
+      <h2>Why We Love This Penthouse</h2>
+      <p>For us, it's the rooftop and those views. Finding an apartment in Río Real with sea and golf views is one thing. Finding one with an additional 116 m² of outdoor space is quite another.</p>
+      <p>The south-facing orientation, generous living room and established community are all attractive features, but it's the solarium that gives this property its personality.</p>
+      <p>We also appreciate that the apartment has been cared for. There's no pressure to undertake an immediate renovation, yet plenty of opportunity for a new owner to create something more contemporary over time.</p>
+      <p>At €595,000, it's an interesting option for anyone looking for a two-bedroom penthouse in Río Real, particularly those who place a high value on outdoor living. And as local residents ourselves, we can certainly understand the appeal of those views.</p>
+      <div class="love-section__author">
+        <img src="images/louise-brace.jpg" alt="Louise Brace">
+        <div>
+          <div class="love-section__author-name">Louise Brace</div>
+          <div class="love-section__author-title">Co-Founder, Rio Real Residences</div>
+        </div>
+      </div>
+    </div>
+    <div class="love-section__image">
+      <img src="images/properties/monte-salma/monte-salma-rio-real-apartment-roof-terrace.jpg" alt="Rooftop solarium with sea and golf views">
+    </div>
+  </div>
+</div>
+
+<!-- Contact strip -->
+<div class="contact-strip" style="margin-top:0;">
+  <div class="container">
+    <p class="label">Interested in this property?</p>
+    <h2>Let's arrange a viewing</h2>
+    <p>Our team can organise a private visit at your convenience, and provide a full information pack for this and similar properties.</p>
+    <div class="contact-strip__actions">
+      <a href="#" class="btn btn--whatsapp" data-wa="Hello, I'd like to arrange a viewing for the South-Facing Penthouse in Monte Salma, Río Real.">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+      <a href="contact.html" class="btn btn--primary">Request a Viewing</a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="nav__logo" style="margin-bottom:16px">
+          <img src="images/logo-mark.png" alt="Rio Real Residences" class="nav__logo-img"><span class="nav__logo-text"><span class="nav__logo-main">Rio Real Residences</span></span>
+        </div>
+        <p>Your specialist lifestyle and real estate agency for Rio Real and Marbella East.</p>
+        <div class="footer__contact-links">
+          <a href="#" class="footer__contact-link" data-wa="">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <a href="#" class="footer__contact-link" data-email="">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            louise@riorealresidences.com
+          </a>
+        </div>
+        <div class="footer__social">
+          <a href="https://instagram.com/riorealresidences" class="footer__social-link" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://tiktok.com/@riorealresidences" class="footer__social-link" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.22 8.22 0 0 0 4.79 1.52V6.75a4.85 4.85 0 0 1-1.02-.06z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@RioRealResidences" class="footer__social-link" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.55A3.02 3.02 0 0 0 .5 6.19C0 8.04 0 12 0 12s0 3.96.5 5.81a3.02 3.02 0 0 0 2.12 2.14C4.46 20.5 12 20.5 12 20.5s7.54 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14C24 15.96 24 12 24 12s0-3.96-.5-5.81zM9.75 15.5v-7l6.5 3.5-6.5 3.5z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h5>Properties</h5>
+        <ul class="footer__links">
+          <li><a href="properties.html" class="footer__link">For Sale</a></li>
+          <li><a href="properties.html?type=Villa" class="footer__link">Villas</a></li>
+          <li><a href="properties.html?type=Apartment" class="footer__link">Apartments</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Agency</h5>
+        <ul class="footer__links">
+          <li><a href="about.html" class="footer__link">About Us</a></li>
+          <li><a href="vip-owners" class="footer__link">VIP Owner's Club</a></li>
+          <li><a href="contact.html" class="footer__link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>The Area</h5>
+        <ul class="footer__links">
+          <li><a href="rio-real.html" class="footer__link">Río Real Guide</a></li>
+          <li><a href="about.html#area" class="footer__link">Rio Real Golf</a></li>
+          <li><a href="about.html#area" class="footer__link">Marbella East</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">© 2025 Rio Real Residences S.L. · All rights reserved.</span>
+      <nav class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Legal Notice</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="prop-lightbox" id="prop-lightbox">
+  <button class="prop-lightbox__btn prop-lightbox__prev" onclick="lightboxMove(-1)">&#8592;</button>
+  <img class="prop-lightbox__img" id="lightbox-img" src="" alt="">
+  <button class="prop-lightbox__btn prop-lightbox__next" onclick="lightboxMove(1)">&#8594;</button>
+  <button class="prop-lightbox__close" onclick="closeLightbox()">&#10005;</button>
+  <div class="prop-lightbox__counter" id="lightbox-counter"></div>
+</div>
+
+<script src="js/main.js?v=8"></script>
+<script>
+  const galleryImages = [
+    { src: 'images/properties/monte-salma/monte-salma-golf-apartment-with-views.jpg', alt: 'South-facing penthouse with sea and golf views' },
+    { src: 'images/properties/monte-salma/monte-salma-golf-property-roof-terrace.jpg', alt: 'Rooftop solarium' },
+    { src: 'images/properties/monte-salma/monte-salma-rio-real-golf-apartment-terrace.jpg', alt: 'Outdoor terrace' },
+    { src: 'images/properties/monte-salma/monte-salma-rio-real-apartment-roof-terrace.jpg', alt: 'Roof terrace with views' },
+    { src: 'images/properties/monte-salma/monte-salma-golf-apartment-rio-real-living-room.jpg', alt: 'Living room' },
+    { src: 'images/properties/monte-salma/monte-salma-rio-real-golf-apartment-living-room.jpg', alt: 'Living room with golf views' },
+    { src: 'images/properties/monte-salma/monte-salma-golf-apartment-living-room-with-view.jpg', alt: 'Living room with view' },
+    { src: 'images/properties/monte-salma/monte-salma-rio-real-golf-apartment-dining-area.jpg', alt: 'Dining area' },
+    { src: 'images/properties/monte-salma/monte-salma-rio-real-golf-apartment-principal-bedroom.jpg', alt: 'Principal bedroom' },
+    { src: 'images/properties/monte-salma/monte-salma-apartment-rio-real-bedroom-with-views.jpg', alt: 'Bedroom with views' },
+    { src: 'images/properties/monte-salma/monte-salma-golf-apartment-rio-real-bedroom-2.jpg', alt: 'Second bedroom' },
+    { src: 'images/properties/monte-salma/monte-salma-rio-real-property-kitchen.jpg', alt: 'Kitchen' },
+    { src: 'images/properties/monte-salma/monte-salma-rio-real-apartment-bathroom.jpg', alt: 'Bathroom' },
+    { src: 'images/properties/monte-salma/monte-salma-golf-apartment-rio-real-roof-terrace.jpg', alt: 'Roof terrace' },
+    { src: 'images/properties/monte-salma/monte-salma-views-to-rio-real-golf.jpg', alt: 'Views to Río Real Golf' },
+    { src: 'images/properties/monte-salma/monte-salma-urbanisation-rio-real.jpg', alt: 'Monte Salma urbanisation' },
+    { src: 'images/properties/monte-salma/monte-salma-golf-complex-swimming-pool.jpg', alt: 'Community swimming pool' },
+    { src: 'images/properties/monte-salma/monte-salma-rio-real-golf-complex-swimming-pool.jpg', alt: 'Golf complex pool' },
+  ];
+
+  let currentIndex = 0;
+
+  function openLightbox(index) {
+    currentIndex = index;
+    const lb = document.getElementById('prop-lightbox');
+    lb.classList.add('open');
+    updateLightbox();
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    document.getElementById('prop-lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function lightboxMove(dir) {
+    currentIndex = (currentIndex + dir + galleryImages.length) % galleryImages.length;
+    updateLightbox();
+  }
+
+  function updateLightbox() {
+    const img = galleryImages[currentIndex];
+    document.getElementById('lightbox-img').src = img.src;
+    document.getElementById('lightbox-img').alt = img.alt;
+    document.getElementById('lightbox-counter').textContent = (currentIndex + 1) + ' / ' + galleryImages.length;
+  }
+
+  document.getElementById('prop-lightbox').addEventListener('click', function(e) {
+    if (e.target === this) closeLightbox();
+  });
+
+  document.addEventListener('keydown', function(e) {
+    const lb = document.getElementById('prop-lightbox');
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'ArrowLeft') lightboxMove(-1);
+    if (e.key === 'ArrowRight') lightboxMove(1);
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+  const galleryGrid = document.querySelector('.prop-gallery__grid');
+  if (galleryGrid) {
+    galleryImages.slice(3).forEach((img, i) => {
+      const div = document.createElement('div');
+      div.className = 'prop-gallery__thumb prop-gallery__thumb--extra';
+      div.onclick = () => openLightbox(i + 3);
+      div.innerHTML = `<img src="${img.src}" alt="${img.alt}" loading="lazy">`;
+      galleryGrid.appendChild(div);
+    });
+  }
+</script>
+</body>
+</html>
