@@ -168,7 +168,10 @@ async function initPropertiesPage() {
       const allAreas = [p.neighbourhood || '', ...(p.neighbourhoodAliases || [])];
       if (!allAreas.some(a => norm(a) === norm(f.area))) return false;
     }
-    if (f.type && !p.type.toLowerCase().includes(f.type.toLowerCase())) return false;
+    if (f.type) {
+      const allTypes = [p.type || '', ...(p.typeAliases || [])];
+      if (!allTypes.some(t => t.toLowerCase().includes(f.type.toLowerCase()))) return false;
+    }
     if (f.priceMin && p.price < f.priceMin) return false;
     if (f.priceMax < Infinity && p.price > f.priceMax) return false;
     if (f.beds  && (p.bedrooms  || 0) < f.beds)  return false;
