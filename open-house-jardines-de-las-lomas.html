@@ -111,6 +111,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       grid-template-columns: repeat(4, 1fr);
       gap: 3px;
       height: 240px;
+      overflow: hidden;
     }
     .photo-strip img {
       width: 100%;
@@ -118,71 +119,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       object-fit: cover;
       display: block;
     }
-    .hero__logo {
-      position: absolute;
-      top: 28px;
-      left: 32px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-    }
-    .hero__logo img {
-      width: 36px;
-      height: 36px;
-      object-fit: contain;
-    }
-    .hero__logo-text {
-      font-family: var(--font-sans);
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: #fff;
-      text-shadow: 0 1px 6px rgba(0,0,0,0.4);
-    }
-    .hero__label {
-      position: absolute;
-      bottom: 32px;
-      left: 40px;
-      right: 40px;
-    }
-    .hero__eyebrow {
-      font-family: var(--font-sans);
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--teal);
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .hero__eyebrow::before {
-      content: '';
-      display: inline-block;
-      width: 28px;
-      height: 2px;
-      background: var(--teal);
-    }
-    .hero__title {
-      font-family: var(--font-serif);
-      font-size: clamp(2.4rem, 5vw, 4rem);
-      font-weight: 300;
-      color: #fff;
-      line-height: 1.05;
-      margin-bottom: 8px;
-      text-shadow: 0 2px 12px rgba(0,0,0,0.5);
-    }
-    .hero__date {
-      font-family: var(--font-sans);
-      font-size: 0.85rem;
-      color: rgba(255,255,255,0.9);
-      letter-spacing: 0.06em;
-      text-shadow: 0 1px 6px rgba(0,0,0,0.5);
-    }
-
     /* Main layout */
     .page {
       max-width: 1000px;
@@ -499,9 +435,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="details">
     <p class="details__intro">What if the budget for a two-bedroom apartment in Rio Real could buy you a three-bedroom home?</p>
     <p class="details__body">With two-bedroom apartments in Rio Real starting from around €450,000 and frequently exceeding half a million euros, this charming townhouse deserves a closer look.</p>
-    <p class="details__body" style="margin-top: -24px;">Well-priced at €530,000, the property offers generous family accommodation across three floors, a private terrace opening onto beautifully maintained communal gardens and a swimming pool shared by just 18 homes.</p>
-    <p class="details__body" style="margin-top: -24px;">Situated in Lomas de Pozuelo, in the green residential hills between Rio Real and Marbella, it's a peaceful enclave just five minutes by car from the town centre and within walking distance of the beach.</p>
-    <p class="details__body" style="margin-top: -24px;">It's an interesting alternative for buyers who may have been concentrating their property search on apartments in Marbella East. Join us for our Open House and discover for yourself just how much home €530,000 can buy in Rio Real.</p>
+    <p class="details__body">Well-priced at €530,000, the property offers generous family accommodation across three floors, a private terrace opening onto beautifully maintained communal gardens and a swimming pool shared by just 18 homes.</p>
+    <p class="details__body">Situated in Lomas de Pozuelo, in the green residential hills between Rio Real and Marbella, it's a peaceful enclave just five minutes by car from the town centre and within walking distance of the beach.</p>
+    <p class="details__body">It's an interesting alternative for buyers who may have been concentrating their property search on apartments in Marbella East. Join us for our Open House and discover for yourself just how much home €530,000 can buy in Rio Real.</p>
 
     <ul class="detail-list">
       <li>
