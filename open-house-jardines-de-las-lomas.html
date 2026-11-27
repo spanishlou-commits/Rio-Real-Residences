@@ -37,33 +37,79 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       min-height: 100vh;
     }
 
-    /* Hero */
-    .hero {
-      position: relative;
-      overflow: hidden;
+    /* Header */
+    .page-header {
+      background: var(--dark);
+      padding: 28px 40px 32px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
     }
-    .hero__main {
-      height: 60vh;
-      min-height: 400px;
+    .page-header__logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      flex-shrink: 0;
     }
-    .hero__main img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center 60%;
-      display: block;
+    .page-header__logo img {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
     }
-    .hero__overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to bottom, rgba(14,14,14,0.25) 0%, transparent 35%, rgba(14,14,14,0.65) 100%);
-      pointer-events: none;
+    .page-header__logo-text {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
     }
+    .page-header__centre {
+      text-align: center;
+      flex: 1;
+    }
+    .page-header__eyebrow {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .page-header__eyebrow::before,
+    .page-header__eyebrow::after {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 1px;
+      background: var(--teal);
+    }
+    .page-header__title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 300;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .page-header__sub {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 0.04em;
+    }
+    .page-header__spacer { width: 160px; flex-shrink: 0; }
+
+    /* Photo strip */
     .photo-strip {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 3px;
-      height: 160px;
+      height: 240px;
     }
     .photo-strip img {
       width: 100%;
@@ -396,12 +442,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     /* Responsive */
     @media (max-width: 720px) {
-      .hero__main { height: 45vh; min-height: 280px; }
-      .photo-strip { grid-template-columns: repeat(2, 1fr); height: 120px; }
+      .page-header { padding: 20px; flex-wrap: wrap; }
+      .page-header__spacer { display: none; }
+      .page-header__centre { text-align: left; }
+      .page-header__eyebrow { justify-content: flex-start; }
+      .photo-strip { grid-template-columns: repeat(2, 1fr); height: 160px; }
       .photo-strip img:nth-child(3),
       .photo-strip img:nth-child(4) { display: none; }
-      .hero__label { padding: 32px 20px 28px; }
-      .hero__logo { left: 20px; }
       .page {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -418,26 +465,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<!-- Hero -->
-<div class="hero">
-  <div class="hero__main">
-    <img src="images/properties/jardines-lomas-5/terrace.jpg" alt="Jardines de las Lomas — private terrace">
-  </div>
-  <div class="hero__overlay"></div>
-  <a href="/" class="hero__logo">
+<!-- Header -->
+<div class="page-header">
+  <a href="/" class="page-header__logo">
     <img src="images/logo-mark.png" alt="Rio Real Residences">
-    <span class="hero__logo-text">Rio Real Residences</span>
+    <span class="page-header__logo-text">Rio Real Residences</span>
   </a>
-  <div class="hero__label">
-    <div class="hero__eyebrow">Open House Invitation</div>
-    <h1 class="hero__title">Jardines de las Lomas<br>Lomas de Pozuelo, Rio Real</h1>
-    <p class="hero__date">Thursday 3rd December · 12h – 16h</p>
+  <div class="page-header__centre">
+    <div class="page-header__eyebrow">Open House Invitation</div>
+    <h1 class="page-header__title">Jardines de las Lomas<br>Lomas de Pozuelo, Rio Real</h1>
+    <p class="page-header__sub">Thursday 3rd December &middot; 12h &ndash; 16h</p>
   </div>
+  <div class="page-header__spacer"></div>
 </div>
 
 <!-- Photo strip -->
 <div class="photo-strip">
-  <img src="images/properties/jardines-lomas-5/exterior.jpg" alt="Jardines de las Lomas — exterior">
+  <img src="images/properties/jardines-lomas-5/terrace.jpg" alt="Jardines de las Lomas — private terrace">
   <img src="images/properties/jardines-lomas-5/salon.jpg" alt="Jardines de las Lomas — living room">
   <img src="images/properties/jardines-lomas-5/upper-terrace.jpg" alt="Jardines de las Lomas — upper terrace">
   <img src="images/properties/jardines-lomas-5/pool.jpg" alt="Jardines de las Lomas — communal pool">
